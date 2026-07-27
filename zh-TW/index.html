@@ -1,0 +1,623 @@
+<!DOCTYPE html><!--WB7GeLrlG8pYHojUEDHh4--><html lang="zh-TW"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/natee-lab-site/fams-real-overview.png"/><link rel="preload" as="image" href="/natee-lab-site/fams-real-chart.png"/><link rel="stylesheet" href="/natee-lab-site/_next/static/css/aee960fc3a6992d7.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/natee-lab-site/_next/static/chunks/webpack-b5e332dae746a001.js"/><script src="/natee-lab-site/_next/static/chunks/87c73c54-24122e7b92478d00.js" async=""></script><script src="/natee-lab-site/_next/static/chunks/18-be465c5ad4892fb7.js" async=""></script><script src="/natee-lab-site/_next/static/chunks/main-app-454d2653e7211792.js" async=""></script><script src="/natee-lab-site/_next/static/chunks/148-74f944faa3aed879.js" async=""></script><script src="/natee-lab-site/_next/static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js" async=""></script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><title>Natee AI Lab</title><meta name="description" content="Natee 的個人網站與實驗室。"/><link rel="alternate" hrefLang="zh-TW" href="https://reacheryin.github.io/natee-lab-site/zh-TW/"/><link rel="alternate" hrefLang="en" href="https://reacheryin.github.io/natee-lab-site/en/"/><link rel="alternate" hrefLang="x-default" href="https://reacheryin.github.io/natee-lab-site/en/"/><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&amp;family=Noto+Serif+TC:wght@400..700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><script src="/natee-lab-site/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="antialiased"><div hidden=""><!--$--><!--/$--></div><div class="theme-lab min-h-dvh bg-bg text-text"><div class="pnav"><style>
+        .pnav{position:fixed;top:0;left:0;right:0;z-index:40;pointer-events:none}
+        .pnav-backdrop{position:fixed;inset:0;z-index:38;pointer-events:auto} /* 點外面關閉；桌機滑出頂端也會關 */
+        .pnav-sensor{position:absolute;top:0;left:0;right:0;height:20px;pointer-events:auto;cursor:pointer}
+        .pnav-track{position:absolute;top:0;left:0;right:0;height:3px;background:rgba(130,130,150,.22);
+          pointer-events:auto;cursor:pointer}
+        .pnav-fill{position:absolute;top:0;left:0;height:3px;background:var(--signature,#e0a94a);
+          box-shadow:0 0 10px 0 var(--signature,#e0a94a);transition:width .12s linear}
+        .pnav-dot{position:absolute;top:1.5px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);
+          background:var(--signature,#e0a94a);box-shadow:0 0 12px 2px var(--signature,#e0a94a);pointer-events:none}
+        .pnav-tick{position:absolute;top:0;width:1px;height:3px;background:rgba(140,140,160,.7);transform:translateX(-.5px)}
+        .pnav-tick.done{background:var(--signature,#e0a94a)}
+        /* 展開的章節列（hover / tap 才出現） */
+        .pnav-bar{position:absolute;top:0;left:0;right:0;height:0;overflow:hidden;pointer-events:none;
+          background:rgba(12,11,20,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+          border-bottom:1px solid rgba(255,255,255,.06);
+          display:flex;align-items:center;gap:clamp(10px,3vw,34px);padding:0 clamp(16px,5vw,80px);
+          opacity:0;transition:height .28s ease,opacity .22s ease}
+        .pnav.open .pnav-bar{height:46px;opacity:1;pointer-events:auto}
+        .pnav-item{font-family:var(--font-mono),monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+          color:rgba(230,228,240,.58);background:none;border:0;cursor:pointer;padding:6px 2px;white-space:nowrap;
+          transition:color .2s}
+        .pnav-item:hover{color:#fff}
+        .pnav-item.on{color:var(--signature,#e0a94a)}
+        .pnav-item .n{opacity:.5;margin-right:7px}
+        @media (max-width:760px),(orientation:portrait){
+          .pnav-sensor{height:26px;right:72px} /* 手機：加大點擊帶、右側讓給語言鈕 */
+          .pnav-bar{justify-content:space-between;gap:4px;padding:0 12px}
+          .pnav-item{font-size:10px;letter-spacing:.05em;padding:6px 0}
+          .pnav-item .n{display:none}
+        }
+      </style><div class="pnav-bar"><button class="pnav-item"><span class="n">01</span>Lab</button><button class="pnav-item"><span class="n">02</span>Phuttan</button><button class="pnav-item"><span class="n">03</span>FAMS</button><button class="pnav-item"><span class="n">04</span>Arun</button><button class="pnav-item"><span class="n">05</span>About</button><button class="pnav-item on"><span class="n">06</span>Work</button></div><div class="pnav-sensor"></div><div class="pnav-track"><span class="pnav-tick done" style="left:0%"></span><span class="pnav-tick done" style="left:0%"></span><span class="pnav-tick done" style="left:0%"></span><span class="pnav-tick done" style="left:0%"></span><span class="pnav-tick done" style="left:0%"></span><span class="pnav-tick done" style="left:0%"></span></div><div class="pnav-fill" style="width:0%"></div><div class="pnav-dot" style="left:0%"></div></div><div class="pointer-events-none fixed inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-5 text-xs uppercase"><span class="text-[13px] tracking-[0.24em] text-signature">✦ Natee™</span><span class="pointer-events-auto"><a hrefLang="en" class="text-[11px] uppercase tracking-[0.18em] text-signature" href="/natee-lab-site/en/">EN</a></span></div><div class="circuit-hero" aria-hidden="true"><div id="stage"><div class="scanlines"></div><div class="topglow"></div><svg id="heroScene" preserveAspectRatio="xMidYMid meet"><defs><filter id="rough" x="-4%" y="-4%" width="108%" height="108%"><feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="2" seed="7" result="n"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"></feDisplacementMap></filter><filter id="blurGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"></feGaussianBlur></filter></defs><g id="world" opacity="0"><g id="tracesGlow" filter="url(#blurGlow)" opacity="0.4"></g><g id="traces" filter="url(#rough)"></g><g id="nodes"></g><g id="readouts"><text class="boxlabel" id="boxlabel">LOCAL SERVER — ALWAYS ON</text><text class="ro gold" id="ticker">TXF 23,845 ▲ 12</text><text class="ro" id="pipeText">idle</text><text class="ro gold" id="chatText"></text><text class="ro gold" id="uptime">uptime 41d 07:12:00</text></g><g id="pulses"></g></g></svg><div class="vig"></div><div class="grain"></div><div class="headline"><h1>Natee<br/>AI Lab<span class="g">.</span></h1><p>// PHUTTAN · PIPELINE · FAMS and more</p></div><div class="hint">順著這條線<!-- --> <b>↓</b></div></div><div class="loader"><svg viewBox="0 0 640 300" aria-hidden="true"><g class="spark"><line x1="398" y1="184" x2="388" y2="170"></line><line x1="416" y1="182" x2="423" y2="168"></line><line x1="394" y1="216" x2="383" y2="228"></line><line x1="418" y1="218" x2="427" y2="231"></line><line x1="408" y1="176" x2="408" y2="162"></line><line x1="408" y1="224" x2="408" y2="238"></line></g><rect class="lbody" x="408" y="172" width="66" height="56" rx="10"></rect><rect class="hole" x="414" y="187" width="13" height="6" rx="2"></rect><rect class="hole" x="414" y="207" width="13" height="6" rx="2"></rect><path class="lwire" d="M 474 200 L 576 200"></path><g id="powerSym"><path id="lring" pathLength="100" d="M 614.2 177 A 26 26 0 1 1 589.8 177"></path><path id="ltick" pathLength="30" d="M 602 158 L 602 186"></path></g><circle id="ldotA" r="3.2" fill="#e7b85f" opacity="0" style="filter:drop-shadow(0 0 4px rgba(231,184,95,.85))"><animateMotion id="ldotAm" dur="0.5s" begin="indefinite" fill="freeze" path="M 410 200 L 576 200"></animateMotion></circle><circle id="ldotB" r="3.2" fill="#e7b85f" opacity="0" style="filter:drop-shadow(0 0 4px rgba(231,184,95,.85))"><animateMotion id="ldotBm" dur="0.45s" begin="indefinite" fill="freeze"><mpath href="#lring"></mpath></animateMotion></circle><g id="plugG"><path id="lcable" class="lwire" d="M -12 258 C 90 258, 60 206, 148 202 S 220 200, 238 200"></path><rect class="lbody" x="238" y="178" width="58" height="44" rx="10"></rect><line class="prong" x1="296" y1="190" x2="322" y2="190"></line><line class="prong" x1="296" y1="210" x2="322" y2="210"></line><path id="lguide" fill="none" stroke="none" d="M -12 258 C 90 258, 60 206, 148 202 S 220 200, 238 200 L 318 200"></path><circle id="lloop" r="3" fill="#e7b85f" style="filter:drop-shadow(0 0 4px rgba(231,184,95,.85))"><animateMotion dur="1.7s" repeatCount="indefinite"><mpath href="#lguide"></mpath></animateMotion><animate attributeName="opacity" values="0;1;1;1;0;0" keyTimes="0;0.06;0.82;0.9;0.94;1" dur="1.7s" repeatCount="indefinite"></animate></circle></g></svg><p class="ltext">// plugging the lab in</p></div><style>
+.circuit-hero{--c-bg:#0c0b12;--c-surface:#14121d;--c-border:#2a2540;--c-text:#d8d3e8;--c-dim:#8a84a6;
+  --c-violet:#8576ff;--c-violet-bright:#a89bff;--c-violet-deep:#5a4bc4;--c-gold:#e7b85f;}
+.circuit-hero #stage{position:fixed;inset:0;z-index:1;background:var(--c-bg)}
+/* 掃描線紋理 + 頂部打光（墊在電路後面；值同原型 body::before/::after） */
+.circuit-hero .scanlines{position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:repeating-linear-gradient(90deg,rgba(133,118,255,.05) 0 1px,transparent 1px 3px)}
+.circuit-hero .topglow{position:absolute;top:-14%;left:50%;width:76%;height:360px;transform:translateX(-50%);
+  pointer-events:none;z-index:0;filter:blur(24px);
+  background:radial-gradient(ellipse at center,rgba(133,118,255,.16),transparent 70%)}
+.circuit-hero .loader{position:fixed;inset:0;z-index:30;background:var(--c-bg);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:22px;transition:opacity .38s ease}
+.circuit-hero .loader.off{opacity:0;pointer-events:none}
+.circuit-hero .loader svg{width:min(480px,82vw);overflow:visible}
+.circuit-hero .loader .lwire{fill:none;stroke:var(--c-violet-deep);stroke-width:2}
+.circuit-hero .loader .lbody{fill:var(--c-surface);stroke:var(--c-violet-deep);stroke-width:2}
+.circuit-hero .loader .prong{stroke:var(--c-violet-bright);stroke-width:5;stroke-linecap:round}
+.circuit-hero .loader .hole{fill:#0c0b12;stroke:var(--c-violet-deep);stroke-width:1}
+.circuit-hero .loader .spark{opacity:0;transform-origin:410px 200px}
+.circuit-hero .loader .spark line{stroke:var(--c-gold);stroke-width:2.5;stroke-linecap:round}
+.circuit-hero .loader.plugged .spark{animation:chSparkgo .42s ease-out .26s}
+@keyframes chSparkgo{0%{opacity:0;transform:scale(.5)}18%{opacity:1}100%{opacity:0;transform:scale(1.5)}}
+.circuit-hero .loader #lring,.circuit-hero .loader #ltick{fill:none;stroke:var(--c-gold);stroke-width:2.5;opacity:0}
+.circuit-hero .loader.ring #lring{opacity:1;stroke-dasharray:100;stroke-dashoffset:100;animation:chRingdraw .45s linear forwards}
+@keyframes chRingdraw{to{stroke-dashoffset:0}}
+.circuit-hero .loader.tick #ltick{opacity:1;stroke-dasharray:30;stroke-dashoffset:30;animation:chTickdraw .18s linear forwards}
+@keyframes chTickdraw{to{stroke-dashoffset:0}}
+.circuit-hero .loader #powerSym{transform-origin:602px 200px;filter:drop-shadow(0 0 5px rgba(231,184,95,.55));
+  transition:transform .85s cubic-bezier(.3,1.1,.4,1),filter .85s ease}
+.circuit-hero .loader #powerSym path{transition:stroke .85s ease}
+/* 泛光換色：畫完後漸漸亮起——大 bloom + 金→白熱，沉住不瞬閃，再通電 */
+.circuit-hero .loader.poweringup #powerSym{transform:scale(1.18);
+  filter:drop-shadow(0 0 10px rgba(255,244,214,.95)) drop-shadow(0 0 40px rgba(255,226,150,.9)) drop-shadow(0 0 82px rgba(231,184,95,.6))}
+.circuit-hero .loader.poweringup #powerSym path{stroke:#fff4d8}
+.circuit-hero .loader.plugged #lloop{display:none}
+.circuit-hero .loader .ltext{font-size:11px;letter-spacing:.3em;color:var(--c-dim);text-transform:uppercase;
+  font-family:var(--font-mono),"JetBrains Mono",monospace}
+.circuit-hero .loader .ltext::after{content:"";display:inline-block;width:18px;text-align:left;animation:chLdots 1.2s steps(4) infinite}
+@keyframes chLdots{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+.circuit-hero svg#heroScene{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible}
+.circuit-hero .trace{fill:none;stroke:#4c44a4;stroke-width:1.5}
+.circuit-hero .trace.main{stroke:#655ad8;stroke-width:1.7}
+.circuit-hero .trace.faint{stroke-dasharray:3 5;stroke-width:1.2;opacity:.75}
+.circuit-hero .traceGlow{fill:none;stroke:var(--c-violet);stroke-width:3.2}
+.circuit-hero .encl{fill:none;stroke:var(--c-violet-deep);stroke-width:1.2;stroke-dasharray:6 6;opacity:.8}
+.circuit-hero .node rect{fill:var(--c-surface);stroke:var(--c-border);stroke-width:1.2}
+.circuit-hero .node.ext rect{fill:rgba(20,18,29,.4);stroke:#3a3454;stroke-dasharray:4 3}
+.circuit-hero .node.key rect{stroke:var(--c-violet-deep)}
+.circuit-hero .node text{fill:var(--c-text);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-anchor:middle}
+.circuit-hero .node text.sub{fill:var(--c-dim);font-size:9.5px;letter-spacing:.06em;text-transform:lowercase}
+.circuit-hero .node .led{fill:var(--c-violet-bright);animation:chBlink 2.4s ease-in-out infinite}
+@keyframes chBlink{0%,100%{opacity:1}50%{opacity:.15}}
+.circuit-hero .node.blip rect{stroke:var(--c-violet-bright)}
+.circuit-hero .node.blipg rect{stroke:var(--c-gold)}
+/* pipeline 劇本的節點狀態：說話中 / 工作中 / 合併閃 / CI 紅 */
+.circuit-hero .node.speak rect{stroke:var(--c-violet-bright)}
+.circuit-hero .node.working rect{stroke:var(--c-violet);animation:chWorkflick .5s steps(2) infinite}
+@keyframes chWorkflick{50%{stroke:var(--c-violet-bright)}}
+.circuit-hero .node.flash rect{stroke:var(--c-gold);filter:drop-shadow(0 0 8px rgba(231,184,95,.7))}
+.circuit-hero .node.flashwarn rect{stroke:#d98080;filter:drop-shadow(0 0 8px rgba(217,128,128,.55))}
+.circuit-hero .vig{position:fixed;inset:0;z-index:2;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 42%,transparent 55%,rgba(5,4,10,.55) 100%)}
+.circuit-hero .grain{position:fixed;inset:-60%;z-index:2;pointer-events:none;opacity:.045;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter><rect width="140" height="140" filter="url(%23n)"/></svg>');
+  animation:chGrain .9s steps(3) infinite}
+@keyframes chGrain{0%{transform:translate(0,0)}33%{transform:translate(-1.2%,.8%)}66%{transform:translate(.8%,-1.1%)}100%{transform:translate(0,0)}}
+.circuit-hero .ro{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em;fill:var(--c-dim);
+  paint-order:stroke;stroke:#0c0b12;stroke-width:4px;stroke-linejoin:round}
+.circuit-hero .ro.gold{fill:var(--c-gold)}
+.circuit-hero .ro.warn{fill:#d98080}
+.circuit-hero .boxlabel{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.22em;fill:var(--c-dim)}
+.circuit-hero .pulseHead{filter:drop-shadow(0 0 4px rgba(231,184,95,.85))}
+.circuit-hero .pulseHead.v{filter:drop-shadow(0 0 4px rgba(168,155,255,.85))}
+.circuit-hero .headline{position:absolute;left:26px;bottom:110px;max-width:46vw;z-index:3;opacity:0}
+@media (max-width:760px),(orientation:portrait){
+  /* 手機/直式：headline 移到頂部——填滿 portrait viewBox 上方預留的空白帶（節點從 y240 才開始），
+     電路在其下方流動；與原型 lab-full.html 一致 */
+  .circuit-hero .headline{top:64px;bottom:auto;left:20px;max-width:92vw}
+  .circuit-hero .headline h1{font-size:clamp(34px,10vw,72px)}
+  .circuit-hero .headline p{font-size:10px;letter-spacing:.14em}
+}
+.circuit-hero .headline h1{font-family:var(--font-display),"Space Grotesk",sans-serif;font-weight:700;
+  font-size:clamp(40px,6.5vw,92px);line-height:.98;letter-spacing:-.02em;color:var(--c-text)}
+.circuit-hero .headline h1 .g{color:var(--c-gold)}
+.circuit-hero .headline p{margin-top:16px;font-size:12px;letter-spacing:.2em;color:var(--c-dim);text-transform:uppercase;
+  font-family:var(--font-mono),"JetBrains Mono",monospace}
+.circuit-hero .hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;opacity:0;
+  font-size:11px;letter-spacing:.3em;color:var(--c-dim);text-transform:uppercase;font-family:var(--font-mono),"JetBrains Mono",monospace}
+.circuit-hero .hint b{color:var(--c-gold);font-weight:400;animation:chNudge 1.8s ease-in-out infinite;display:inline-block}
+@keyframes chNudge{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+</style></div><main class="relative z-[2] mt-[175vh]"><section class="phuttan-chapter w-full text-left"><style>
+.phuttan-chapter{--violet-deep:#5a4bc4}
+/* 滿版：不置中 1160 盒，自帶左右 padding（對齊個人介紹頁的編輯排版） */
+.phuttan-chapter .card{width:100%;padding:0 clamp(22px,6vw,90px);position:relative;
+  opacity:0;filter:blur(9px);transform:translateY(16px);
+  transition:opacity .9s ease,filter .9s ease,transform .9s ease}
+.phuttan-chapter .card.in{opacity:1;filter:none;transform:none}
+.phuttan-chapter .eyebrow{padding-top:26px;border-top:1px solid var(--border);
+  font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;font-family:var(--font-mono)}
+/* 編輯字級：title 放大到個人介紹頁的量級 */
+.phuttan-chapter h2{font-family:var(--font-display);font-weight:700;font-size:clamp(52px,9vw,124px);
+  letter-spacing:-.03em;margin:16px 0 10px;line-height:.92;color:var(--text)}
+.phuttan-chapter h2 .dot{color:var(--accent)}
+.phuttan-chapter .tagline{font-size:clamp(16px,1.9vw,23px);letter-spacing:.01em;color:var(--text);opacity:.82;
+  line-height:1.6;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+/* tech stack：bordered strip、mono 放大、label 上金——被注意到但不過 title */
+.phuttan-chapter .stackline{margin-top:24px;padding:15px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  font-family:var(--font-mono);font-size:clamp(12.5px,1.35vw,16px);letter-spacing:.05em;color:var(--text);line-height:1.7;text-transform:lowercase}
+.phuttan-chapter .stackline .sl-lbl{color:var(--signature);font-weight:600;letter-spacing:.16em}
+/* stack strip 已有下框線 → 緊接的 AI assistant 小標不再畫線、縮短空隙（避免雙線夾空白） */
+.phuttan-chapter .stackline + .act{border-top:0;margin-top:clamp(38px,4vw,52px);padding-top:0}
+.phuttan-chapter .act{font-size:clamp(13px,1.1vw,15px);font-weight:500;letter-spacing:.22em;color:var(--accent-bright);
+  text-transform:uppercase;margin-top:60px;padding-top:26px;border-top:1px solid var(--border);font-family:var(--font-mono)}
+/* 主內文：編輯級、去暗化、滿版撐寬（對齊個人介紹頁 .tl-introp——不設 em 上限，別半途折行留白） */
+.phuttan-chapter .vignote{margin-top:18px;font-size:clamp(16px,1.5vw,20px);color:var(--text);opacity:.9;line-height:1.8;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .vig{margin-top:30px;background:var(--surface-2);border:1px solid var(--border);
+  border-radius:14px;padding:34px 32px 30px}
+.phuttan-chapter .vrow{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;row-gap:16px}
+.phuttan-chapter .chip{border:1px solid var(--border);border-radius:9px;padding:12px 15px;font-size:14px;
+  background:var(--surface);white-space:nowrap;color:var(--text);font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .chip.msg{min-width:150px;white-space:normal}
+.phuttan-chapter .chip.core{border-color:var(--violet-deep);letter-spacing:.08em;font-family:var(--font-mono)}
+.phuttan-chapter .conn{width:clamp(20px,4vw,44px);height:2px;background:var(--violet-deep);position:relative;flex:none}
+.phuttan-chapter .conn i{position:absolute;top:-2.5px;left:0;width:7px;height:7px;border-radius:50%;
+  background:var(--signature);filter:drop-shadow(0 0 4px rgba(231,184,95,.85));opacity:0}
+.phuttan-chapter .tslot{border:1.2px dashed #3a3454;border-radius:10px;padding:12px 16px;font-size:14.5px;
+  letter-spacing:.08em;color:var(--muted);min-width:250px;min-height:64px;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.phuttan-chapter .tcol{display:flex;flex-direction:column;gap:8px;flex:1;min-width:240px;align-items:flex-start}
+.phuttan-chapter .vreply{min-height:22px;font-size:15.5px;color:var(--text);text-align:left;line-height:1.55;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .vreply::before{content:"↩ ";color:var(--signature)}
+.phuttan-chapter .vreply{opacity:0;transform:translateY(4px);transition:opacity .45s ease,transform .45s ease}
+.phuttan-chapter .vreply.show{opacity:1;transform:none}
+.phuttan-chapter .chip.core{transition:.3s}
+.phuttan-chapter .chip.core.active{border-color:var(--accent);box-shadow:0 0 14px -4px var(--accent)}
+.phuttan-chapter .conn.go i{animation:phTravel .5s linear forwards}
+@keyframes phTravel{from{left:-4px;opacity:1}90%{opacity:1}to{left:calc(100% - 3px);opacity:0}}
+.phuttan-chapter .tslot{transition:.35s}
+.phuttan-chapter .tslot.hit{border:1px solid var(--signature);background:rgba(231,184,95,.07);align-items:flex-start;text-align:left}
+.phuttan-chapter .tslot b{font-size:13px;letter-spacing:.1em;color:var(--signature);font-weight:600}
+.phuttan-chapter .tslot span{margin-top:4px;font-size:13.5px;color:var(--muted);line-height:1.55;letter-spacing:.01em;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .hloop{width:100%;max-width:900px;margin-top:20px;overflow:visible}
+/* 跑道 + Slack 對話串雙欄 */
+/* 跑道 + Slack 滿版佔滿：跑道 2/3、Slack 1/3；壓上與 demo(.vig) 同款底色框、好讀 */
+.phuttan-chapter .hloop-row{display:flex;gap:clamp(24px,3vw,52px);align-items:center;flex-wrap:wrap;margin-top:24px;
+  background:var(--surface-2);border:1px solid var(--border);border-radius:14px;padding:clamp(24px,3vw,40px)}
+.phuttan-chapter .hloop-row .hloop{margin-top:0;flex:2 1 0;min-width:340px;max-width:none}
+/* Slack 卡片：真 Slack 深色樣式（頭像/應用程式 badge/PR 紫條/reactions），訊息 toast 一則一則彈入 */
+.phuttan-chapter .slackcard{flex:1 1 0;min-width:320px;align-self:center;
+  background:#1a1d21;border:1px solid #2b2d31;border-radius:12px;overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:0 18px 44px -22px rgba(0,0,0,.85);font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .sk-top{display:flex;align-items:center;gap:5px;padding:11px 14px;
+  border-bottom:1px solid #2b2d31;background:#101214;color:#e8e8e9;font-weight:700;font-size:14px}
+.phuttan-chapter .sk-hash{color:#9a9b9e;font-weight:500}
+.phuttan-chapter .sk-feed{padding:10px 14px 12px;display:flex;flex-direction:column;gap:13px;
+  height:210px;overflow:hidden;justify-content:flex-end;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 34px);mask-image:linear-gradient(to bottom,transparent 0,#000 34px)}
+.phuttan-chapter .sk-m{display:flex;gap:9px;opacity:0;transform:translateY(12px) scale(.99);
+  transition:opacity .42s ease,transform .42s cubic-bezier(.2,.85,.25,1)}
+.phuttan-chapter .sk-m.in{opacity:1;transform:none}
+.phuttan-chapter .sk-av{width:36px;height:36px;border-radius:8px;flex:none;display:grid;place-items:center;overflow:hidden}
+.phuttan-chapter .sk-av.ph{background:linear-gradient(140deg,#7b5cff,#e7b85f)}
+.phuttan-chapter .sk-av .sk-pic{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.phuttan-chapter .sk-av.gh{background:#24292f}
+.phuttan-chapter .sk-av.gh svg{width:22px;height:22px;fill:#fff}
+.phuttan-chapter .sk-bd{flex:1;min-width:0}
+.phuttan-chapter .sk-hd{display:flex;align-items:center;gap:7px;line-height:1.2}
+.phuttan-chapter .sk-nm{font-weight:700;font-size:13.5px;color:#e8e8e9}
+.phuttan-chapter .sk-app{font-size:9.5px;font-weight:500;color:#c9cacc;background:#35373b;
+  border-radius:3px;padding:1px 5px;letter-spacing:.02em}
+.phuttan-chapter .sk-tm{font-size:11px;color:#8b8d91;font-weight:400}
+.phuttan-chapter .sk-tx{margin-top:3px;font-size:13.5px;line-height:1.46;color:#d1d2d3;word-break:break-word}
+.phuttan-chapter .sk-m.warn .sk-tx{color:#e8918c}
+.phuttan-chapter .sk-m.gold .sk-tx{color:#e7c05f}
+.phuttan-chapter .sk-pr{margin-top:7px;padding:7px 11px;border-left:3px solid #8258d6;background:#202225;border-radius:0 6px 6px 0}
+.phuttan-chapter .sk-pr-t{display:block;font-size:13px;font-weight:600;color:#4ea9e0;line-height:1.35}
+.phuttan-chapter .sk-pr-m{display:block;margin-top:3px;font-size:11px;color:#8b8d91;font-family:var(--font-mono)}
+.phuttan-chapter .sk-rx{margin-top:7px;display:inline-flex;gap:6px;font-size:12px;color:#c9cacc;
+  background:#222528;border:1px solid #35373b;border-radius:20px;padding:2px 9px;line-height:1.5}
+@media (max-width:760px){
+  .phuttan-chapter .hloop-row{flex-direction:column;align-items:stretch}
+  .phuttan-chapter .slackcard{flex:none;width:100%;min-width:0}
+}
+.phuttan-chapter .ltrack{fill:none;stroke:#4c44a4;stroke-width:1.5}
+.phuttan-chapter .lfail{fill:none;stroke:#d98080;stroke-width:1.2;stroke-dasharray:4 4;opacity:.55}
+.phuttan-chapter .lbr{fill:none;stroke:var(--accent-bright);stroke-width:1.6;opacity:.85}
+.phuttan-chapter .lc rect{fill:var(--surface-2);stroke:var(--border);stroke-width:1}
+.phuttan-chapter .lc text{fill:var(--muted);font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-anchor:middle}
+.phuttan-chapter .lcm rect{stroke:rgba(231,184,95,.4)}
+.phuttan-chapter .lann{fill:var(--muted);font-family:var(--font-mono);font-size:9px;letter-spacing:.08em;opacity:.8}
+.phuttan-chapter .lann.warn{fill:#d98080;opacity:.7}
+.phuttan-chapter .lchev{fill:none;stroke:#4c44a4;stroke-width:1.5;opacity:.7}
+.phuttan-chapter .lfarw{fill:#d98080;opacity:.4}
+.phuttan-chapter .ldot{fill:var(--signature);filter:drop-shadow(0 0 4px rgba(231,184,95,.85));transition:fill .3s}
+.phuttan-chapter .ldot.bad{fill:#d98080;filter:drop-shadow(0 0 4px rgba(217,128,128,.8))}
+.phuttan-chapter .lverdict{font-family:var(--font-mono);font-size:13px;text-anchor:middle}
+.phuttan-chapter .lverdict.ok{fill:var(--signature)}
+.phuttan-chapter .lverdict.bad{fill:#d98080}
+.phuttan-chapter .lc rect{transition:.25s}
+.phuttan-chapter .lc.pass rect{stroke:var(--accent-bright)}
+.phuttan-chapter .lc.pass text{fill:var(--text)}
+.phuttan-chapter .lc.work rect{stroke:var(--accent);animation:phWorkflick .4s steps(2) infinite}
+@keyframes phWorkflick{50%{stroke:var(--accent-bright)}}
+.phuttan-chapter .lc.warn rect{stroke:#d98080}
+.phuttan-chapter .lc.goldon rect{stroke:var(--signature);filter:drop-shadow(0 0 6px rgba(231,184,95,.5))}
+.phuttan-chapter .lc.goldon text{fill:var(--signature)}
+.phuttan-chapter .lann.on{fill:var(--accent-bright);opacity:1}
+.phuttan-chapter .h2grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,120px);margin-top:26px;text-align:left}
+.phuttan-chapter .h2col h4{font-size:clamp(17px,1.7vw,21px);font-weight:600;letter-spacing:.02em;color:var(--accent-bright);
+  border-left:4px solid var(--violet-deep);padding-left:12px;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .h2col>span{display:block;margin-top:7px;font-size:clamp(13.5px,1.2vw,15.5px);color:var(--muted);padding-left:14px;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .h2col ul{margin:14px 0 0;padding-left:16px}
+.phuttan-chapter .h2col li{font-size:clamp(15px,1.4vw,18px);color:var(--text);opacity:.9;line-height:1.7;margin-bottom:11px;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .h2col li::marker{color:var(--violet-deep)}
+.phuttan-chapter .statrow{display:flex;align-items:baseline;gap:18px;margin-top:44px;border-top:1px solid var(--border);padding-top:26px}
+.phuttan-chapter .stat{font-family:var(--font-display);font-weight:700;font-size:clamp(46px,5.6vw,66px);color:var(--signature)}
+.phuttan-chapter .statlabel{font-size:13px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;font-family:var(--font-mono)}
+.phuttan-chapter .punch{margin-top:26px;font-size:clamp(19px,2.2vw,29px);font-weight:500;color:var(--text);line-height:1.42;letter-spacing:-.01em;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.phuttan-chapter .dogfood{margin-top:16px;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif;font-size:clamp(17px,1.8vw,23px);line-height:1.65;color:var(--text);opacity:.92}
+.phuttan-chapter .dogfood .g{color:var(--signature)}
+/* 手機/直式：ai assistant 判斷 demo 改直式堆疊（訊息 → 直立連接線 → PHUTTAN → 直立連接線 → 工具槽/回覆），對齊原型 */
+@media (max-width:760px),(orientation:portrait){
+  .phuttan-chapter .vrow{flex-direction:column;align-items:flex-start}
+  .phuttan-chapter .conn{width:2px;height:22px;margin-left:26px}
+  .phuttan-chapter .conn.go i{animation:phTravelV .5s linear forwards}
+  .phuttan-chapter .h2grid{grid-template-columns:1fr}
+}
+@keyframes phTravelV{from{top:-4px;left:-2.5px;opacity:1}90%{opacity:1}to{top:calc(100% - 3px);left:-2.5px;opacity:0}}
+</style><div class="card"><p class="eyebrow">// the core of the lab</p><h2>Phuttan<span class="dot">.</span></h2><p class="tagline">Agent orchestrator — messages routed, agents dispatched, code shipped.</p><p class="stackline"><span class="sl-lbl">stack</span> — <!-- -->bun · typescript · slack api · github api · local model + cloud agents</p><h3 class="act">ai assistant</h3><p class="vignote">每句話先經過本地小模型選擇工具、抽取參數。已知任務交給確定性腳本，閒聊由本地模型回答，需要深度推理才升級到雲端；判斷用的模型可以抽換。</p><div class="vig"><div class="vrow"><div class="chip msg" id="vMsg">「現在曼谷幾點？」</div><div class="conn" id="c1"><i></i></div><div class="chip core" id="vCore">PHUTTAN</div><div class="conn" id="c2"><i></i></div><div class="tcol"><div class="tslot" id="vSlot">?</div><div class="vreply" id="vReply"></div></div></div></div><h3 class="act" style="margin-top:34px">harness × loop engineering</h3><p class="vignote">重點不在用了哪個模型，在模型外面那一層工程——給 agent 一副可靠的框架（harness），和一組會自己收斂的迴圈（loop）。</p><div class="hloop-row"><svg class="hloop" viewBox="42 8 378 146" aria-label="delivery loop"><path class="ltrack" id="ltrack" d="M 105 30 L 335 30 A 55 55 0 0 1 335 140 L 105 140 A 55 55 0 0 1 105 30 Z"></path><path class="lfail" id="lfailP" d="M 388 78 Q 330 100 262 44"></path><circle class="ldot" id="ldot" r="3.6" opacity="0"></circle><text class="lverdict" id="lverdict" x="404" y="62"></text><text class="lann warn" x="330" y="98">fix ↺</text><text class="lann" x="88" y="82" text-anchor="middle">next issue</text><text class="lann" x="88" y="96" text-anchor="middle">⟳</text><g class="lc" id="lcIssue"><rect x="103" y="20" width="74" height="20" rx="6"></rect><text id="lcIssueT" x="140" y="34">issue #142</text></g><g class="lc" id="lcAgent"><rect x="227" y="20" width="46" height="20" rx="6"></rect><text x="250" y="34">agent</text></g><path class="lbr" d="M 221 14 L 211 14 L 211 46 L 221 46 M 279 14 L 289 14 L 289 46 L 279 46"></path><path class="lchev" d="M 193 26 l 7 4 l -7 4"></path><path class="lchev" d="M 243 136 l -7 4 l 7 4"></path><path class="lfarw" d="M 262 44 L 271 45 L 266 52 Z"></path><g class="lc" id="lcPr"><rect x="315" y="20" width="30" height="20" rx="6"></rect><text x="330" y="34">pr</text></g><g class="lc" id="lcReview"><rect x="363" y="75" width="54" height="20" rx="6"></rect><text x="390" y="89">review</text></g><g class="lc" id="lcDocs"><rect x="279" y="130" width="42" height="20" rx="6"></rect><text x="300" y="144">docs</text></g><g class="lc lcm" id="lcMerge"><rect x="136" y="130" width="48" height="20" rx="6"></rect><text x="160" y="144">merge</text></g></svg><aside class="slackcard" aria-hidden="true"><div class="sk-top"><span class="sk-hash">#</span><span class="sk-top-ch">natee-lab</span></div><div class="sk-feed" id="skFeed"></div></aside></div><div class="h2grid"><div class="h2col"><h4>Harness engineering</h4><span>把 agent 圍進可靠的工作框架</span><ul><li>交辦時給 agent 一份寫清楚的規格和驗收清單；它回報的是固定格式的結果——做完了沒、卡在哪，系統直接看得懂，不用人猜</li><li>修不好最多重修兩輪就停；做太久或中途斷線，系統都知道怎麼收拾，不會掛在那裡等人救</li><li>每一步重跑都安全——做過的事都有記號，不會重複派工、重複留言</li></ul></div><div class="h2col"><h4>Loop engineering</h4><span>讓迴圈自己收斂</span><ul><li>一張 issue 開出來，從寫程式、審查、補文件到合併，整條路自己走完，人不用盯</li><li>中途出事——測試失敗、審查斷掉、程式碼衝突、票漏了沒派——系統定期巡一遍，自己撿回來繼續</li><li>票之間可以標「先做完那張、再做這張」，前一張合併，下一張自動開工</li><li>敢讓它全自動的原因：每一輪都要過測試和驗收條件，過不了就不往下走</li></ul></div></div><div class="statrow"><span class="stat">139</span><span class="statlabel">issues → merged prs, hands-free</span></div><p class="punch">整條產線上，人只出現在兩個位置：開頭把需求寫清楚，結尾點頭放行；中間的一切，交給流程。</p><p class="dogfood"><span class="g">Natee AI Lab 幾乎所有的開發都跑在它上面：fams 的每一個功能、這個網站本身。</span></p></div></section><section class="fams-chapter w-full text-left"><style>
+        .fams-chapter{--violet-deep:#5a4bc4;margin-top:clamp(72px,11vh,150px)} /* 與 Phuttan 章隔開 */
+        /* 滿版 + 編輯字級（與 Phuttan 一致） */
+        .fams-chapter .card{width:100%;padding:0 clamp(22px,6vw,90px);position:relative;
+          opacity:0;filter:blur(9px);transform:translateY(16px);
+          transition:opacity .9s ease,filter .9s ease,transform .9s ease}
+        .fams-chapter .card.in{opacity:1;filter:none;transform:none}
+        .fams-chapter .eyebrow{padding-top:26px;border-top:1px solid var(--border);
+          font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+        .fams-chapter h2{font-family:var(--font-display);font-weight:700;font-size:clamp(52px,9vw,124px);
+          letter-spacing:-.03em;margin:16px 0 10px;line-height:.92;color:var(--text)}
+        .fams-chapter h2 .dot{color:var(--accent)}
+        .fams-chapter .tagline{font-size:clamp(16px,1.9vw,23px);letter-spacing:.01em;color:var(--text);opacity:.85;
+          line-height:1.6}
+        .fams-chapter .tagline-zh2{margin-top:10px;font-size:clamp(14px,1.4vw,17px);color:var(--text);opacity:.8;
+          font-family:var(--font-display)}
+        /* tech stack strip（前移、mono 放大、label 上金） */
+        .fams-chapter .stackline{margin-top:24px;padding:15px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+          font-family:var(--font-mono);font-size:clamp(12.5px,1.35vw,16px);letter-spacing:.05em;color:var(--text);line-height:1.7;text-transform:lowercase}
+        .fams-chapter .stackline .sl-lbl{color:var(--signature);font-weight:600;letter-spacing:.16em}
+        .fams-chapter .shot{margin:40px 0 0}
+        .fams-chapter .shot img{width:100%;display:block;border:1px solid var(--border);border-radius:12px;
+          box-shadow:0 30px 80px -35px rgba(0,0,0,.8)}
+        .fams-chapter .shot figcaption{margin-top:12px;font-size:13px;letter-spacing:.06em;color:var(--muted)}
+        .fams-chapter .act{font-size:clamp(13px,1.1vw,15px);font-weight:500;letter-spacing:.22em;color:var(--accent-bright);
+          text-transform:uppercase;margin-top:60px;padding-top:26px;border-top:1px solid var(--border)}
+        .fams-chapter .tlog{list-style:none;margin:22px 0 0;padding:0 0 0 2px;max-width:1180px;
+          border-left:1px solid var(--violet-deep)}
+        .fams-chapter .tlog li{position:relative;padding:10px 0 10px 28px;display:flex;align-items:baseline;gap:16px;
+          opacity:0;transform:translateX(-6px);transition:opacity .6s ease,transform .6s ease}
+        .fams-chapter .card.in .tlog li{opacity:1;transform:none}
+        .fams-chapter .tlog li:nth-child(1){transition-delay:.05s}
+        .fams-chapter .tlog li:nth-child(2){transition-delay:.12s}
+        .fams-chapter .tlog li:nth-child(3){transition-delay:.19s}
+        .fams-chapter .tlog li:nth-child(4){transition-delay:.26s}
+        .fams-chapter .tlog li:nth-child(5){transition-delay:.33s}
+        .fams-chapter .tlog li:nth-child(6){transition-delay:.4s}
+        .fams-chapter .tlog li:nth-child(7){transition-delay:.47s}
+        .fams-chapter .tlog li:nth-child(8){transition-delay:.54s}
+        .fams-chapter .tlog li:nth-child(9){transition-delay:.61s}
+        .fams-chapter .tlog li:nth-child(10){transition-delay:.68s}
+        .fams-chapter .tlog li::before{content:"";position:absolute;left:-4px;top:14px;width:7px;height:7px;
+          border-radius:50%;background:var(--violet-deep)}
+        .fams-chapter .tlog li:last-child::before,
+        .fams-chapter .tlog li:nth-last-child(2)::before{background:var(--signature)}
+        .fams-chapter .tlog i{font-style:normal;font-family:var(--font-mono);font-size:13px;
+          letter-spacing:.06em;color:var(--muted);flex:none}
+        .fams-chapter .tlog span{font-family:var(--font-display);font-size:clamp(15px,1.4vw,18px);color:var(--text);opacity:.9}
+        .fams-chapter .tlog em{font-style:normal;font-family:var(--font-mono);font-size:12.5px;
+          color:var(--accent-bright);opacity:.85}
+        .fams-chapter .statrow{display:flex;align-items:baseline;gap:18px;margin-top:44px;
+          border-top:1px solid var(--border);padding-top:26px}
+        .fams-chapter .stat{font-family:var(--font-display);font-weight:700;font-size:clamp(46px,5.6vw,66px);
+          color:var(--signature)}
+        .fams-chapter .statlabel{font-size:13px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}
+      </style><div class="card"><p class="eyebrow">// shipped by Phuttan</p><h2>FAMS<span class="dot">.</span></h2><p class="tagline">Fubon Asset Management System — a real-money portfolio, live.</p><p class="tagline-zh2">接著真實券商、管著真實部位的資產系統——整套由上一章的產線交付。</p><p class="stackline"><span class="sl-lbl">stack</span> — <!-- -->next.js app router · react server components · tailwind v4 · bun:sqlite · fubon sdk · websocket → sse</p><figure class="shot"><img src="/natee-lab-site/fams-real-overview.png" alt="FAMS 總覽——實機畫面，金額遮蔽"/><figcaption>實機畫面 — 金額由它自己的「隱藏金額」功能遮蔽 · 持倉與績效為真</figcaption></figure><figure class="shot"><img src="/natee-lab-site/fams-real-chart.png" alt="FAMS K 線個股頁——實機畫面"/><figcaption>K 線個股頁 — 看盤、畫線、下單，同一頁完成 · 金額同樣自動遮蔽</figcaption></figure><h3 class="act">shipping log</h3><ol class="tlog"><li><i>06-15</i><span>專案骨架——Next.js + 設計系統接線</span></li><li><i>06-17</i><span>KPI、持倉、資產配置——接上富邦真值</span><em>×3</em></li><li><i>06-18</i><span>觀察名單抽屜 + 即時行情鏈路（WebSocket → SSE）</span><em>×2</em></li><li><i>06-19</i><span>持倉與配置即時化、目錄結構重構</span><em>×2</em></li><li><i>06-20</i><span>淨值歷史、走勢圖、績效面板、每日快照、載入狀態</span><em>×5</em></li><li><i>06-28</i><span>K 線圖——個股詳情頁、指標、畫圖工具</span></li><li><i>07-01</i><span>全域導覽熱鍵、隱藏金額、名稱來源修正</span><em>×3</em></li><li><i>07-02</i><span>逐月績效表</span></li><li><i>07-04</i><span>交易側欄——下單表單、五檔、送單</span><em>×4</em></li><li><i>07-04</i><span>富邦維護模式——斷線韌性</span><em>·進行中</em></li></ol><div class="statrow"><span class="stat">24</span><span class="statlabel">features · 9 shipping days — 每一個都是 spec → loop → merge</span></div></div></section><section class="ds-chapter" data-world="lab" aria-label="design system"><style>
+.ds-chapter{position:relative;margin-top:8vh;padding:12vh 0 13vh;overflow:hidden;
+  --w-bg:#0d0b14;--w-surface:#14121d;--w-border:#2a2540;--w-text:#d8d3e8;--w-dim:#8a84a6;
+  --w-a:#8576ff;--w-a2:#a89bff;--w-deep:#5a4bc4;--w-gold:#e7b85f;
+  background:var(--w-bg);color:var(--w-text);
+  border-top:1px solid var(--w-border);border-bottom:1px solid var(--w-border);
+  opacity:0;transform:translateY(18px);
+  transition:opacity .9s ease,transform .9s ease,background .7s ease,border-color .7s ease}
+.ds-chapter.in{opacity:1;transform:none}
+.ds-chapter[data-world=warm]{--w-bg:#efe6d6;--w-surface:#e6dac5;--w-border:#d9c9ae;
+  --w-text:#3a2e26;--w-dim:#8a7663;--w-a:#a8593a;--w-a2:#c06a45;--w-deep:#7c4128;--w-gold:#9c7420}
+.ds-chapter .eyebrow,.ds-chapter .ds-title,.ds-chapter .ds-tag,.ds-chapter .ds-tag-zh,
+.ds-chapter .ds-wallnote,.ds-chapter .ds-speclabel,.ds-chapter .ds-glyph,
+.ds-chapter .ds-switchnote,.ds-chapter .ds-close,.ds-chapter .ds-flow{transition:color .7s ease}
+.ds-chapter .ds-head{padding:0 clamp(22px,5vw,80px)}
+.ds-chapter .eyebrow{padding-top:26px;border-top:1px solid var(--w-border);
+  color:var(--w-dim);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.ds-chapter .ds-title{font-family:var(--font-display),"Space Grotesk",sans-serif;font-weight:700;letter-spacing:-.03em;
+  font-size:clamp(52px,9vw,124px);line-height:.92;margin:16px 0 10px}
+.ds-chapter .ds-title .dot{color:var(--w-a)}
+.ds-chapter .ds-tag{font-size:clamp(16px,1.9vw,23px);letter-spacing:.01em;line-height:1.6;
+  color:var(--w-text);opacity:.85;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.ds-chapter .ds-tag-zh{margin-top:10px;font-size:clamp(14px,1.4vw,17px);line-height:1.75;color:var(--w-text);opacity:.8;
+  font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+/* tech stack strip（前移、mono 放大、label 上金）——與 Phuttan／FAMS 一致 */
+.ds-chapter .ds-stackline{margin-top:24px;padding:15px 0;border-top:1px solid var(--w-border);border-bottom:1px solid var(--w-border);
+  font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:clamp(12.5px,1.35vw,16px);letter-spacing:.05em;color:var(--w-text);line-height:1.7;text-transform:lowercase}
+.ds-chapter .ds-stackline .sl-lbl{color:var(--w-gold);font-weight:600;letter-spacing:.16em}
+.ds-chapter .ds-tag-zh b,.ds-chapter .ds-close b{color:var(--w-gold);opacity:1;font-weight:600}
+.ds-chapter .ds-switchwrap{margin-top:8vh;padding:0 clamp(22px,5vw,80px)}
+.ds-chapter .ds-switch{position:relative;display:inline-flex;align-items:center;gap:6px;padding:7px;
+  border-radius:999px;border:1px solid var(--w-border);background:var(--w-surface);cursor:pointer;
+  font:inherit;color:var(--w-dim);transition:background .7s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease}
+.ds-chapter .ds-switch:hover{transform:translateY(-2px);border-color:var(--w-gold);box-shadow:0 12px 34px -14px rgba(0,0,0,.55)}
+.ds-chapter .ds-switch:active{transform:translateY(0)}
+.ds-chapter .ds-switch .opt{position:relative;z-index:1;cursor:pointer;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:12px;letter-spacing:.2em;
+  text-transform:uppercase;padding:15px 28px;border-radius:999px;box-shadow:inset 0 0 0 1px transparent;transition:.45s ease;color:inherit}
+.ds-chapter[data-world=lab] .opt[data-w=lab],.ds-chapter[data-world=warm] .opt[data-w=warm]{
+  background:var(--w-bg);color:var(--w-gold);box-shadow:inset 0 0 0 1px var(--w-gold)}
+.ds-chapter[data-world=lab] .opt[data-w=warm]:hover,.ds-chapter[data-world=warm] .opt[data-w=lab]:hover{
+  color:var(--w-text);box-shadow:inset 0 0 0 1px var(--w-border)}
+.ds-chapter .ds-thumb{position:absolute;inset:-5px;border-radius:999px;border:1.6px solid var(--w-gold);
+  opacity:0;pointer-events:none;animation:dsRing 2.6s ease-out infinite}
+@keyframes dsRing{0%{opacity:.55;transform:scale(.98)}70%,100%{opacity:0;transform:scale(1.06)}}
+.ds-chapter .ds-switch.touched .ds-thumb{display:none}
+.ds-chapter .ds-switchnote{margin-top:16px;font-size:13.5px;line-height:1.8;color:var(--w-text);opacity:.72;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif;max-width:640px}
+.ds-chapter .ds-switchnote .tap{color:var(--w-gold);font-weight:600;opacity:1;display:inline-block;animation:tapBob 1.5s ease-in-out infinite}
+@keyframes tapBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.ds-chapter .ds-switch.touched ~ .ds-switchnote .tap{animation:none;opacity:.5}
+.ds-chapter .ds-wall{display:flex;height:clamp(230px,36vh,390px);margin-top:8vh}
+.ds-chapter .ds-band{flex:1;min-width:0;position:relative;cursor:pointer;overflow:hidden;
+  opacity:0;transform:translateY(26px);
+  transition:flex .5s cubic-bezier(.6,.1,.2,1),opacity .55s ease var(--d,0s),transform .55s ease var(--d,0s)}
+.ds-chapter .ds-wall.lit .ds-band{opacity:1;transform:none}
+.ds-chapter .ds-band:hover,.ds-chapter .ds-band.on{flex:3.4}
+.ds-chapter .ds-band .bn,.ds-chapter .ds-band .bv{position:absolute;bottom:14px;writing-mode:vertical-rl;
+  font-family:var(--font-mono),"JetBrains Mono",monospace;letter-spacing:.16em;white-space:nowrap}
+.ds-chapter .ds-band .bn{left:10px;font-size:10px;opacity:.9}
+.ds-chapter .ds-band .bv{left:30px;font-size:10.5px;opacity:0;transition:opacity .3s ease .12s}
+.ds-chapter .ds-band:hover .bv,.ds-chapter .ds-band.on .bv{opacity:.95}
+.ds-chapter .ds-wallnote{margin:14px clamp(22px,5vw,80px) 0;font-size:12.5px;color:var(--w-dim);font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif}
+.ds-chapter .ds-wallnote .mono{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.ds-chapter .ds-type{margin-top:11vh;display:flex;flex-direction:column;gap:7vh}
+.ds-chapter .ds-spec{display:flex;align-items:baseline;gap:clamp(16px,3vw,40px);padding:0 clamp(22px,5vw,80px);
+  opacity:0;transform:translateX(-46px);transition:opacity .8s ease,transform .8s ease}
+.ds-chapter .ds-spec.right{justify-content:flex-end;transform:translateX(46px)}
+.ds-chapter.in .ds-spec{opacity:1;transform:none}
+.ds-chapter.in #ds-spec1{transition-delay:.15s}
+.ds-chapter.in #ds-spec2{transition-delay:.3s}
+.ds-chapter.in #ds-spec3{transition-delay:.45s}
+.ds-chapter .ds-glyph{line-height:.9;flex:none}
+.ds-chapter .g-display{font-family:var(--font-display),"Space Grotesk",sans-serif;font-weight:700;letter-spacing:-.05em;
+  font-size:clamp(120px,21vw,300px);color:var(--w-text);margin-left:-3vw}
+.ds-chapter .g-text{font-family:"PingFang TC","Noto Sans TC",sans-serif;font-weight:600;
+  font-size:clamp(120px,20vw,280px);color:var(--w-a);margin-right:-4.5vw}
+.ds-chapter .g-mono{font-family:var(--font-mono),"JetBrains Mono",monospace;font-weight:700;font-variant-numeric:tabular-nums;
+  font-size:clamp(42px,8.5vw,120px);letter-spacing:-.02em;color:#f6465d;margin-left:-1vw}
+.ds-chapter .ds-speclabel{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--w-dim);line-height:1.9;text-transform:lowercase}
+.ds-chapter .ds-speclabel.wrap{white-space:pre-line}
+.ds-chapter .ds-speclabel .zh{display:block;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif;font-size:12.5px;letter-spacing:.02em;text-transform:none;color:var(--w-text);opacity:.7}
+.ds-chapter .ds-close{margin:11vh clamp(22px,5vw,80px) 0;font-family:var(--font-display),"PingFang TC","Noto Sans TC",-apple-system,sans-serif;font-size:15px;line-height:1.8;color:var(--w-text);opacity:.9}
+.ds-chapter .ds-flow{margin:22px clamp(22px,5vw,80px) 0;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;color:var(--w-dim);text-transform:lowercase}
+@media (max-width:760px),(orientation:portrait){
+  .ds-chapter .ds-wall{height:210px}
+  .ds-chapter .ds-spec{flex-direction:column;align-items:flex-start;gap:10px}
+  .ds-chapter .ds-spec.right{align-items:flex-end;text-align:right}
+  .ds-chapter .ds-switch .opt{padding:12px 16px;font-size:10.5px;letter-spacing:.14em}
+}
+</style><div class="ds-head"><p class="eyebrow">// one system, two worlds</p><h2 class="ds-title">Arun<span class="dot">.</span></h2><p class="ds-tag">One design system, two temperatures.</p><p class="ds-tag-zh">Lab 的夜與 About 的暖，用的是同一套 token——換世界換的是值，不是版面。整套在 <b>claude.ai/design</b> 對稿定色，同步成 <b>@natee-lab/ui</b>，由 Phuttan 的產線出貨到每個專案。</p><p class="ds-stackline"><span class="sl-lbl">stack</span> — <!-- -->tailwindcss · react · shadcn · claude.ai/design</p></div><div class="ds-switchwrap"><button class="ds-switch" type="button" aria-label="切換世界"><span class="opt" data-w="lab">night — lab</span><span class="opt" data-w="warm">warm — about</span><span class="ds-thumb" aria-hidden="true"></span></button><p class="ds-switchnote"><span class="tap">↑ 按一下試試</span>——底下的色票和整章一起換世界。變的只有變數的值，版面一行沒動。</p></div><div class="ds-wall" aria-label="design tokens"><div class="ds-band" style="background:#0c0b12;color:rgba(240,236,248,.92);--d:0.000s"><span class="bn">--bg<!-- --> · <!-- -->background</span><span class="bv">#0c0b12</span></div><div class="ds-band" style="background:#14121d;color:rgba(240,236,248,.92);--d:0.045s"><span class="bn">--surface<!-- --> · <!-- -->surface</span><span class="bv">#14121d</span></div><div class="ds-band" style="background:#1c1830;color:rgba(240,236,248,.92);--d:0.090s"><span class="bn">--surface-2<!-- --> · <!-- -->overlay</span><span class="bv">#1c1830</span></div><div class="ds-band" style="background:#2a2540;color:rgba(240,236,248,.92);--d:0.135s"><span class="bn">--border<!-- --> · <!-- -->border</span><span class="bv">#2a2540</span></div><div class="ds-band" style="background:#5a4bc4;color:rgba(240,236,248,.92);--d:0.180s"><span class="bn">--violet-deep<!-- --> · <!-- -->structure·deep</span><span class="bv">#5a4bc4</span></div><div class="ds-band" style="background:#8576ff;color:rgba(240,236,248,.92);--d:0.225s"><span class="bn">--violet<!-- --> · <!-- -->structure</span><span class="bv">#8576ff</span></div><div class="ds-band" style="background:#a89bff;color:rgba(22,15,8,.85);--d:0.270s"><span class="bn">--violet-bright<!-- --> · <!-- -->structure·bright</span><span class="bv">#a89bff</span></div><div class="ds-band" style="background:#e7b85f;color:rgba(22,15,8,.85);--d:0.315s"><span class="bn">--gold<!-- --> · <!-- -->signature</span><span class="bv">#e7b85f</span></div><div class="ds-band" style="background:#d8d3e8;color:rgba(22,15,8,.85);--d:0.360s"><span class="bn">--text<!-- --> · <!-- -->text</span><span class="bv">#d8d3e8</span></div><div class="ds-band" style="background:#8a84a6;color:rgba(240,236,248,.92);--d:0.405s"><span class="bn">--dim<!-- --> · <!-- -->dim</span><span class="bv">#8a84a6</span></div><div class="ds-band" style="background:#f6465d;color:rgba(240,236,248,.92);--d:0.450s"><span class="bn">--up<!-- --> · <!-- -->up</span><span class="bv">#f6465d</span></div><div class="ds-band" style="background:#2ebd85;color:rgba(240,236,248,.92);--d:0.495s"><span class="bn">--down<!-- --> · <!-- -->down</span><span class="bv">#2ebd85</span></div></div><p class="ds-wallnote"><span class="mono">tokens</span> — <!-- -->滑過（或點）色塊，看它的名字和值。</p><div class="ds-type"><div class="ds-spec" id="ds-spec1"><span class="ds-glyph g-display">Aa</span><span class="ds-speclabel wrap">display — space grotesk 700
+84 · 54 · 15</span></div><div class="ds-spec right" id="ds-spec2"><span class="ds-speclabel">text — pingfang · noto sans tc · 15 / 1.75<span class="zh">永字八法：一個字，寫全所有筆畫。</span></span><span class="ds-glyph g-text">永</span></div><div class="ds-spec" id="ds-spec3"><span class="ds-glyph g-mono">24,913.72 ▲</span><span class="ds-speclabel wrap">data — jetbrains mono · tabular
+台股慣例：紅漲 · teal 跌</span></div></div><p class="ds-close">從那張黎明寺取色開始，字級、間距、每個元件，都是在 <b>claude.ai/design</b> 裡和 Claude 一起對稿定下來的——這一章你看到的每個顏色和字，包括剛剛那一下切換，都讀自這套 token。</p><p class="ds-flow">designed in claude.ai/design · synced as @natee-lab/ui · shipped by phuttan</p></section></main><div class="about-world" aria-hidden="true"><style>
+.about-world .bridge-photo{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0;
+  background:url('/natee-lab-site/temple-dusk-src.jpeg') center/cover no-repeat;
+  transform:scale(1);transform-origin:center;will-change:transform,opacity}
+.about-world .bridge-overlay{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:0}
+.about-world .bridge-overlay::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top right,rgba(10,8,14,.78) 0%,rgba(10,8,14,.5) 26%,transparent 52%)}
+/* 取色標注分階段：on1 畫出直引線 → on2 色點彈出 + 標籤顯現 */
+.about-world .ab-mark{position:absolute;transform:translate(-50%,-50%);color:inherit}
+.about-world .ab-mark .ab-line{position:absolute;left:0;top:0;width:60px;height:1.4px;background:rgba(255,255,255,.92);
+  transform:scaleX(0);transform-origin:left center;transition:transform .55s cubic-bezier(.4,0,.2,1);box-shadow:0 1px 4px rgba(0,0,0,.7)}
+.about-world .ab-mark .ab-dot{position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:2px solid #fff;
+  background:currentColor;box-shadow:0 0 0 2px rgba(0,0,0,.45),0 0 14px 3px currentColor;
+  transform:translate(-50%,-50%) scale(0);transition:transform .45s cubic-bezier(.2,1.5,.4,1)}
+.about-world .ab-mark .ab-label{position:absolute;left:70px;top:0;transform:translateY(-50%);white-space:nowrap;
+  font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;background:rgba(10,9,16,.72);color:#fff;padding:5px 9px;border-radius:6px;
+  opacity:0;transition:opacity .4s ease .06s}
+.about-world .bridge-overlay.on1 .ab-line{transform:scaleX(1)}
+.about-world .bridge-overlay.on2 .ab-dot{transform:translate(-50%,-50%) scale(1);animation:abPulse 2.6s ease-in-out 1s infinite}
+.about-world .bridge-overlay.on2 .ab-label{opacity:.95}
+@keyframes abPulse{0%,100%{box-shadow:0 0 0 2px rgba(0,0,0,.45),0 0 14px 3px currentColor}50%{box-shadow:0 0 0 2px rgba(0,0,0,.45),0 0 22px 5px currentColor}}
+.about-world .bridge-caption{position:absolute;left:clamp(24px,6vw,90px);bottom:11vh;max-width:min(660px,82vw);
+  font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:500;font-size:clamp(16px,2.05vw,24px);line-height:1.7;color:#f6efdd;
+  text-shadow:0 2px 20px rgba(0,0,0,.82),0 0 44px rgba(0,0,0,.5);
+  opacity:0;transform:translateY(12px);transition:opacity .7s ease,transform .7s ease}
+.about-world .bridge-overlay.on3 .bridge-caption{opacity:1;transform:none}
+.about-world .bridge-caption b{color:#f2c65e;font-weight:600}
+.about-world .bridge-caption .t{color:#e28a58}
+.about-world .about-cv{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:1;opacity:0;pointer-events:none}
+.about-world .about-scrim{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity 1s ease;
+  background:linear-gradient(103deg,#efe6d6 4%,rgba(239,230,214,.86) 30%,rgba(239,230,214,.32) 52%,transparent 70%)}
+.about-world.abwarm .about-scrim{opacity:1}
+.about-world .seam-scroll{height:215vh;position:relative;z-index:2}
+.about-world .ascroll{position:fixed;left:50%;bottom:7vh;transform:translateX(-50%);z-index:3;
+  font-size:20px;color:#8a7663;opacity:0;transition:opacity .8s ease;animation:abNudge 1.9s ease-in-out infinite}
+.about-world.abdusk .ascroll{opacity:.6}
+.about-world.abwarm .ascroll{opacity:0}
+@keyframes abNudge{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+.about-world .ahero{position:fixed;left:0;bottom:0;z-index:3;padding:0 30px 8vh;max-width:min(1180px,94vw);opacity:0;pointer-events:none}
+.about-world.abwarm .ahero{opacity:1}
+.about-world .ahero h1{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:600;color:#a8593a;
+  font-size:clamp(58px,13.5vw,208px);line-height:.9;letter-spacing:-.025em;margin-left:-.06em}
+.about-world .ahero h1 .g{color:#bd8b2c}
+.about-world .ahero h1 .ln{display:block;overflow:hidden}
+.about-world .ahero h1 .ln>i{display:block;font-style:normal;transform:translateY(102%);
+  transition:transform .95s cubic-bezier(.16,1,.3,1)}
+.about-world .ahero.lit h1 .ln:nth-child(1)>i{transition-delay:.05s}
+.about-world .ahero.lit h1 .ln:nth-child(2)>i{transition-delay:.16s}
+.about-world .ahero.lit h1 .ln>i{transform:none}
+.about-world .abridge{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-size:clamp(16px,2.1vw,25px);line-height:1.7;color:#3a2e26;max-width:22em;
+  margin-top:30px;white-space:pre-line;opacity:0;transform:translateY(14px);transition:.9s ease .35s}
+.about-world .ahero.lit .abridge{opacity:.92;transform:none}
+.about-world .asign{display:block;margin-top:20px;font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;
+  font-size:clamp(20px,2.4vw,30px);color:#bd8b2c;opacity:0;transform:translateY(10px);transition:.9s ease .5s}
+.about-world .ahero.lit .asign{opacity:1;transform:none}
+.about-world .asub{margin-top:8px;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.2em;color:#8a7663;
+  text-transform:uppercase;opacity:0;transition:.9s ease .62s}
+.about-world .ahero.lit .asub{opacity:.75}
+.about-world .about-rest{height:96vh}
+</style><div class="bridge-photo"></div><div class="bridge-overlay"><span class="ab-mark" style="left:51%;top:43%;color:#e7b85f"><b class="ab-line"></b><i class="ab-dot"></i><span class="ab-label">--gold · 塔身的金</span></span><span class="ab-mark" style="left:39%;top:31%;color:#a8593a"><b class="ab-line"></b><i class="ab-dot"></i><span class="ab-label">--terracotta · 燒紅的天</span></span><span class="ab-mark" style="left:67%;top:88%;color:#4a4668"><b class="ab-line"></b><i class="ab-dot"></i><span class="ab-label">--bg · 暮色的河</span></span><p class="bridge-caption">這套色票不是憑空調的——取自這張<b>黎明寺</b>（Wat Arun）的黃昏。塔身的<b>金</b>成了整站的簽名色，燒紅的天成了 About 世界的 <span class="t">terracotta</span>，暮色的河成了 Lab 世界的近黑底。一張照片裡同時裝著兩個世界，中間那道黃昏就是它們的接縫——連 app 的名字 <b>arun</b>（อรุณ・黎明）都來自這座廟。</p></div><canvas class="about-cv"></canvas><div class="about-scrim"></div><span class="ascroll">↓</span><div class="ahero"><h1><span class="ln"><i>Systems, teams<span class="g">,</span></i></span><span class="ln"><i>now <span class="g">agents.</span></i></span></h1><p class="abridge">曼谷的第八年。
+同一雙手，換了另一端。</p><span class="asign">— Natee</span><p class="asub">software engineer · ai · bangkok since 2018</p></div><div class="seam-scroll"></div><div class="about-rest"></div></div><section class="timeline" aria-label="career timeline"><style>
+.timeline{position:relative;z-index:4;background:var(--tl-paper);color:var(--tl-ink);
+  --tl-paper:#efe6d6;--tl-ink:#3a2e26;--tl-terra:#a8593a;--tl-terra-deep:#7c4128;
+  --tl-dim:#8a7663;--tl-gold:#bd8b2c;--tl-line:#cbb89b;
+  font-family:"Fraunces","Noto Serif TC",Georgia,serif;overflow:hidden;padding:0 clamp(22px,6vw,90px)}
+.timeline>*{position:relative;z-index:1} /* 滿版設計：不設 max-width 置中盒，各段撐滿視窗寬（自帶左右 padding） */
+.timeline .tl-grain{position:absolute;inset:-60%;z-index:0;pointer-events:none;opacity:.08;mix-blend-mode:multiply;max-width:none;margin:0;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter><rect width="150" height="150" filter="url(%23n)"/></svg>');
+  animation:tlGrain 1s steps(3) infinite}
+@keyframes tlGrain{0%{transform:translate(0,0)}33%{transform:translate(-1.1%,.7%)}66%{transform:translate(.7%,-1%)}100%{transform:translate(0,0)}}
+.timeline .tl-intro{position:relative;min-height:74vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:8vh}
+/* 流動 dither 本人照：右側整高填補空白，左緣漸隱進紙底，文字在上層 */
+.timeline .tl-intro>:not(.tl-intro-cv){position:relative;z-index:1}
+.timeline .tl-intro-cv{position:absolute;right:calc(clamp(22px,6vw,90px)*-1);top:0;bottom:0;height:100%;
+  width:min(52vw,880px);z-index:0;pointer-events:none;opacity:.9;
+  -webkit-mask-image:linear-gradient(to left,#000 93%,transparent 100%);
+  mask-image:linear-gradient(to left,#000 93%,transparent 100%)} /* 去背版幾乎不需要遮罩，只留邊緣一絲淡出 */
+.timeline .tl-ey{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:12px;letter-spacing:.24em;color:var(--tl-terra);text-transform:lowercase;margin-bottom:20px}
+.timeline .tl-intro h2{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:600;font-size:clamp(46px,9vw,132px);line-height:.92;letter-spacing:-.03em}
+.timeline .tl-intro h2 .g{color:var(--tl-gold)}
+.timeline .tl-introp{margin-top:26px;font-family:"Noto Serif TC","Fraunces",serif;font-size:clamp(16px,2vw,22px);line-height:1.8;color:var(--tl-ink);opacity:.78}
+.timeline .tl-introp b{color:var(--tl-terra-deep);font-weight:600;opacity:1}
+.timeline .tl-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--tl-line);border:1px solid var(--tl-line);margin:0 auto 6vh}
+.timeline .tl-metrics .m{background:var(--tl-paper);padding:24px 22px}
+.timeline .tl-metrics .n{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:600;font-size:clamp(34px,4.6vw,60px);color:var(--tl-terra);line-height:.98;letter-spacing:-.02em}
+.timeline .tl-metrics .l{margin-top:10px;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.04em;color:var(--tl-dim);line-height:1.6}
+/* 各區塊進視窗淡入 */
+.timeline .tl-reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
+.timeline .tl-reveal.in{opacity:1;transform:none}
+/* ===== 三面向編輯手風琴：一條線貫穿三章（01 設計 / 02 工程 / 03 AI）===== */
+.timeline .tl-career{--tl-pad:clamp(22px,6vw,90px);width:100vw;margin:4vh 0 0 calc(50% - 50vw)}
+.timeline .tl-facet{position:relative}
+/* 章節線：滿版貫穿；進場由左而右依序畫出 */
+.timeline .tl-facet::before{content:"";position:absolute;left:0;right:0;top:0;height:1.5px;background:var(--tl-line);
+  transform:scaleX(0);transform-origin:left center;transition:transform .9s cubic-bezier(.4,0,.2,1)}
+.timeline .tl-career.in .tl-facet::before{transform:scaleX(1)}
+.timeline .tl-career.in .tl-facet:nth-of-type(2)::before{transition-delay:.18s}
+.timeline .tl-career.in .tl-facet:nth-of-type(3)::before{transition-delay:.36s}
+/* 末章底線由下一章（04 quotes）的章節線接手，不另畫 */
+/* 站點圓點：落在章節線上、內容左緣 */
+.timeline .tl-facet>button::before{content:"";position:absolute;left:var(--tl-pad);top:0;width:11px;height:11px;border-radius:50%;
+  transform:translate(-50%,-50%) scale(0);background:var(--tl-paper);border:2px solid var(--tl-line);
+  transition:transform .5s cubic-bezier(.2,1.5,.4,1),border-color .3s ease,background .3s ease,box-shadow .3s ease}
+.timeline .tl-career.in .tl-facet>button::before{transform:translate(-50%,-50%) scale(1)}
+.timeline .tl-career.in .tl-facet:nth-of-type(1)>button::before{transition-delay:.75s}
+.timeline .tl-career.in .tl-facet:nth-of-type(2)>button::before{transition-delay:.9s}
+.timeline .tl-career.in .tl-facet:nth-of-type(3)>button::before{transition-delay:1.05s}
+.timeline .tl-facet.on>button::before{background:var(--tl-terra);border-color:var(--tl-terra)}
+.timeline .tl-facet.on.gold>button::before{background:var(--tl-gold);border-color:var(--tl-gold);box-shadow:0 0 0 6px rgba(189,139,44,.15)}
+/* 章名列：編號 · 巨字（+ ghost 雙語鏤空斜體）· 年份 · 開合號 */
+.timeline .tl-facet-head{position:relative;width:100%;display:flex;align-items:baseline;gap:clamp(14px,2.6vw,36px);
+  padding:clamp(24px,4.2vh,44px) var(--tl-pad);background:none;border:0;cursor:pointer;text-align:left;
+  opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.timeline .tl-career.in .tl-facet-head{opacity:1;transform:none}
+.timeline .tl-career.in .tl-facet:nth-of-type(1) .tl-facet-head{transition-delay:.5s}
+.timeline .tl-career.in .tl-facet:nth-of-type(2) .tl-facet-head{transition-delay:.65s}
+.timeline .tl-career.in .tl-facet:nth-of-type(3) .tl-facet-head{transition-delay:.8s}
+.timeline .tl-facet-sub{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:clamp(11px,1.1vw,13px);letter-spacing:.2em;color:var(--tl-dim);flex:none}
+.timeline .tl-facet-name{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:600;font-size:clamp(42px,7vw,98px);line-height:.95;
+  letter-spacing:-.02em;color:var(--tl-ink);transition:color .35s ease,transform .5s cubic-bezier(.2,.8,.25,1)}
+.timeline .tl-facet-name em{font-style:italic;font-weight:500;font-size:.46em;letter-spacing:0;margin-left:.45em;
+  -webkit-text-stroke:1.1px var(--tl-terra);color:transparent;vertical-align:.14em;opacity:.75;transition:opacity .35s ease}
+.timeline .tl-facet.gold .tl-facet-name em{-webkit-text-stroke-color:var(--tl-gold)}
+.timeline .tl-facet-head:hover .tl-facet-name{transform:translateX(14px);color:var(--tl-terra-deep)}
+.timeline .tl-facet-head:hover .tl-facet-name em{opacity:1}
+.timeline .tl-facet.on .tl-facet-name{color:var(--tl-terra);transform:none}
+.timeline .tl-facet.on.gold .tl-facet-name{color:var(--tl-gold)}
+.timeline .tl-facet.on .tl-facet-sub{color:var(--tl-terra)}
+.timeline .tl-facet.on.gold .tl-facet-sub{color:var(--tl-gold)}
+/* 章身：grid 0fr→1fr 展開；內容錯開淡入 */
+.timeline .tl-facet-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s cubic-bezier(.4,0,.2,1)}
+.timeline .tl-facet.on .tl-facet-body{grid-template-rows:1fr}
+.timeline .tl-facet-clip{overflow:hidden;min-height:0}
+.timeline .tl-facet-pad{padding:2px var(--tl-pad) clamp(30px,5vh,54px)} /* 內容滿版：不設寬度上限 */
+.timeline .tl-facet-pad>*{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.timeline .tl-facet.on .tl-facet-pad>*{opacity:1;transform:none}
+.timeline .tl-facet.on .tl-facet-pad .co{transition-delay:.18s}
+.timeline .tl-facet.on .tl-facet-pad .bd{transition-delay:.28s}
+.timeline .tl-facet.on .tl-facet-pad .tl-converge{transition-delay:.4s}
+.timeline .tl-facet-pad .co{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:13px;letter-spacing:.16em;color:var(--tl-gold);text-transform:uppercase;margin:0}
+.timeline .tl-facet-pad .bd{margin-top:18px;font-family:"Noto Serif TC","Fraunces",serif;font-size:clamp(17px,2vw,24px);line-height:1.75;color:var(--tl-ink)}
+.timeline .tl-facet-pad .bd b{color:var(--tl-terra-deep);font-weight:600}
+.timeline .tl-facet-pad .bd .g{color:var(--tl-gold);font-weight:600}
+.timeline .tl-converge{margin-top:28px;width:min(560px,100%);max-width:min(560px,100%)}
+.timeline .tl-converge .s{fill:none;stroke:var(--tl-terra);stroke-width:2;opacity:.5}
+.timeline .tl-facet.on .tl-converge .s{stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:tlDrawS 1.1s ease forwards}
+.timeline .tl-converge .m{fill:none;stroke:var(--tl-gold);stroke-width:2.6}
+.timeline .tl-converge text{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.1em;fill:var(--tl-dim)}
+@keyframes tlDrawS{to{stroke-dashoffset:0}}
+.timeline .tl-facet.on .tl-converge .s0{animation-delay:.35s}.timeline .tl-facet.on .tl-converge .s1{animation-delay:.49s}
+.timeline .tl-facet.on .tl-converge .s2{animation-delay:.63s}.timeline .tl-facet.on .tl-converge .s3{animation-delay:.77s}
+/* peer review 滿版 marquee：破出容器全寬；track=兩份 set 平移 -50% 無縫循環；兩排反向、hover 暫停 */
+.timeline .tl-quotes{max-width:none;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);
+  padding:9vh 0 4vh;overflow:hidden}
+/* 章節頭（04 同事怎麼說）：沿用三面向的編輯語言，較小字階、不可點 */
+.timeline .tl-quotes{--tl-pad:clamp(22px,6vw,90px);position:relative;padding-top:0}
+.timeline .tl-quotes::before{content:"";position:absolute;left:0;right:0;top:0;height:1.5px;background:var(--tl-line);
+  transform:scaleX(0);transform-origin:left center;transition:transform .9s cubic-bezier(.4,0,.2,1)}
+.timeline .tl-quotes.in::before{transform:scaleX(1)}
+.timeline .tl-q-headrow{cursor:default;padding-bottom:clamp(20px,3.2vh,34px)}
+.timeline .tl-q-headrow::before{content:"";position:absolute;left:var(--tl-pad);top:0;width:11px;height:11px;border-radius:50%;
+  transform:translate(-50%,-50%) scale(0);background:var(--tl-terra);border:2px solid var(--tl-terra);
+  transition:transform .5s cubic-bezier(.2,1.5,.4,1) .6s}
+.timeline .tl-quotes.in .tl-q-headrow{opacity:1;transform:none;transition-delay:.4s}
+.timeline .tl-quotes.in .tl-q-headrow::before{transform:translate(-50%,-50%) scale(1)}
+.timeline .tl-q-headrow:hover .tl-q-name{transform:none;color:var(--tl-ink)}
+.timeline .tl-q-name{font-size:clamp(30px,4vw,54px)}
+.timeline .tl-q-name em{-webkit-text-stroke-color:var(--tl-terra)}
+.timeline .tl-q-rows{display:flex;flex-direction:column;gap:18px}
+/* 進場：兩排順著各自滾動方向滑入（上排從右、下排從左），錯開時間 */
+.timeline .tl-q-row{overflow:hidden;opacity:0;transform:translateX(9vw);
+  transition:opacity .8s ease .15s,transform .9s cubic-bezier(.2,.8,.25,1) .15s}
+.timeline .tl-q-row.r1{transform:translateX(-9vw);transition-delay:.35s}
+.timeline .tl-quotes.in .tl-q-row{opacity:1;transform:none}
+.timeline .tl-q-track{display:flex;width:max-content;animation:tlQscroll 56s linear infinite}
+.timeline .tl-q-row.r1 .tl-q-track{animation-duration:72s;animation-direction:reverse}
+.timeline .tl-q-row:hover .tl-q-track,
+.timeline .tl-q-row:active .tl-q-track{animation-play-state:paused} /* 桌機 hover／觸控按住＝暫停，放開繼續 */
+@keyframes tlQscroll{to{transform:translateX(-50%)}}
+.timeline .tl-q-set{display:flex;gap:18px;padding-right:18px}
+.timeline .tl-q-card{width:clamp(300px,34vw,430px);flex:none;background:#f5eee0;border:1px solid var(--tl-line);
+  border-radius:12px;padding:22px 24px 18px;display:flex;flex-direction:column;gap:14px;margin:0;
+  box-shadow:0 10px 26px -20px rgba(58,46,38,.5)}
+.timeline .tl-q-card blockquote{margin:0;font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-style:italic;font-size:15.5px;line-height:1.65;
+  color:var(--tl-ink);opacity:.92}
+/* 大引號＝裝飾符號（不成對）：放大、淡化、浮在卡片左上角、與內文脫開 */
+.timeline .tl-q-card{position:relative}
+.timeline .tl-q-card blockquote::before{content:"“";position:absolute;left:14px;top:2px;
+  color:var(--tl-gold);opacity:.38;font-size:54px;line-height:1;font-family:"Fraunces","Noto Serif TC",Georgia,serif;pointer-events:none}
+.timeline .tl-q-card blockquote{font-family:"Noto Serif TC","Fraunces",serif;font-style:normal}
+/* 英文原文＝引用式：左細線 + 縮排（像引出處），取代原本的虛線分隔 */
+.timeline .tl-q-orig{margin:0;padding-left:12px;border-left:2px solid var(--tl-line);
+  font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-style:italic;font-size:12px;line-height:1.55;color:var(--tl-dim)}
+.timeline .tl-q-card figcaption{margin-top:auto;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--tl-dim);text-transform:lowercase}
+/* 尾端容器：西裝 dither 涵蓋 outro+colophon、直通頁底（自然出血、不半空截斷） */
+.timeline .tl-end{position:relative}
+.timeline .tl-end>:not(.tl-outro-cv){position:relative;z-index:1}
+.timeline .tl-outro{min-height:80vh;display:flex;flex-direction:column;justify-content:center;
+  padding:10vh 0 6vh min(40vw,640px)} /* 左側讓給西裝 dither，文字推右 */
+.timeline .tl-outro-cv{position:absolute;left:calc(clamp(22px,6vw,90px)*-1);top:0;bottom:0;height:100%;
+  width:min(46vw,760px);z-index:0;pointer-events:none;opacity:.9;
+  -webkit-mask-image:linear-gradient(to right,#000 55%,transparent 100%);
+  mask-image:linear-gradient(to right,#000 55%,transparent 100%)}
+.timeline .tl-outro .big{font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-weight:600;font-size:clamp(34px,5.5vw,76px);line-height:1.04;letter-spacing:-.02em;color:var(--tl-ink)}
+.timeline .tl-outro .big .g{color:var(--tl-gold)}
+.timeline .tl-outro .sig{margin-top:26px;font-family:"Fraunces","Noto Serif TC",Georgia,serif;font-style:italic;font-size:clamp(20px,2.4vw,30px);color:var(--tl-gold)}
+.timeline .tl-colo{text-align:center;font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--tl-dim);text-transform:lowercase;padding:6vh 20px 9vh}
+@media (max-width:760px),(orientation:portrait){
+  .timeline .tl-metrics{grid-template-columns:1fr 1fr}
+  .timeline .tl-facet-head{gap:10px;flex-wrap:wrap}
+  .timeline .tl-facet-name em{display:none} /* 手機收掉 ghost 字，讓章名不擠 */
+  .timeline .tl-intro-cv{width:86vw;opacity:.5} /* 手機：dither 照壓淡當底紋 */
+  /* 手機：西裝像收成頂部帶（底部淡出），outro 文字移到人像下方乾淨區——不壓臉/身體 */
+  .timeline .tl-outro{padding:58vh 0 8vh;min-height:auto;justify-content:flex-start}
+  .timeline .tl-outro-cv{width:86vw;height:56vh;bottom:auto;opacity:.6;
+    -webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 60%,transparent 100%)}
+}
+</style><div class="tl-grain" aria-hidden="true"></div><div class="tl-intro tl-reveal"><canvas class="tl-intro-cv" aria-hidden="true"></canvas><p class="tl-ey">// bangkok · 7 years at anymind · 4 products, 0 → production</p><h2>十年前端，<br>做到<span class="g">平台架構</span>。</h2><p class="tl-introp">在一間 TSE 上市的跨國 SaaS，我一直是團隊裡負責<b>架構決策、跨團隊協調、效能優化</b>的那個人——拿過 Best Engineer。</p></div><div class="tl-metrics tl-reveal" aria-label="hard numbers"><div class="m"><div class="n">50%</div><div class="l">API 請求砍半<br>推動 GraphQL 取代 REST</div></div><div class="m"><div class="n">93–97</div><div class="l">PageSpeed · 320kb bundle<br>東南亞低網速市場</div></div><div class="m"><div class="n">×4</div><div class="l">各自獨立 deploy 的團隊<br>一座 Nx monorepo</div></div><div class="m"><div class="n">−55%</div><div class="l">CLAUDE.md 723→329 行<br>全團隊 AI context</div></div></div><div class="tl-career tl-reveal"><section class="tl-facet"><button type="button" class="tl-facet-head" aria-expanded="false"><span class="tl-facet-sub">2013–</span><span class="tl-facet-name">設計<em aria-hidden="true">design</em></span></button><div class="tl-facet-body"><div class="tl-facet-clip"><div class="tl-facet-pad"><p class="co">icmenu · ui / 品牌 / 印刷 → 前端</p><p class="bd">從 <b>UI／視覺設計</b>入行，親手把自己的設計刻成前端。到今天，<span class="g">這個站的每一筆還是自己畫的</span>——設計是底色。</p></div></div></div></section><section class="tl-facet"><button type="button" class="tl-facet-head" aria-expanded="false"><span class="tl-facet-sub">2014–</span><span class="tl-facet-name">工程<em aria-hidden="true">engineering</em></span></button><div class="tl-facet-body"><div class="tl-facet-clip"><div class="tl-facet-pad"><p class="co">eztravel · migme · johnsons · hopes · anymind</p><p class="bd">台灣做到東南亞、前端做到<b>平台架構</b>——SSR、效能、跨國團隊，到 <b>Nx monorepo</b> 讓<span class="g">四個團隊共用一套 codebase、又能各自 deploy</span>。路上拿過 Best Engineer。</p><svg class="tl-converge" viewBox="0 0 560 150" aria-label="four teams, one system"><path class="s s0" style="--l:520" d="M 8 18 C 200 18, 210 75, 400 75"></path><path class="s s1" style="--l:500" d="M 8 60 C 200 60, 240 75, 400 75"></path><path class="s s2" style="--l:500" d="M 8 90 C 200 90, 240 75, 400 75"></path><path class="s s3" style="--l:520" d="M 8 132 C 200 132, 210 75, 400 75"></path><path class="m" d="M 400 75 L 552 75"></path><text x="0" y="12">4 teams</text><text x="0" y="54">deploy</text><text x="0" y="112">independently</text><text x="0" y="150">one monorepo</text><text x="470" y="66">one system</text></svg></div></div></div></section><section class="tl-facet on gold"><button type="button" class="tl-facet-head" aria-expanded="true"><span class="tl-facet-sub">2024–</span><span class="tl-facet-name">AI<em aria-hidden="true">agents</em></span></button><div class="tl-facet-body"><div class="tl-facet-clip"><div class="tl-facet-pad"><p class="co">anymind ai 基礎設施 → natee ai lab</p><p class="bd">白天，把 AI 變成<b>整個團隊的基礎設施</b>——共用 skills、CLAUDE.md、SDD。下班，<span class="g">自己蓋一條會自主出貨的 agent 管線</span>——就是你剛剛看過的 Lab。</p></div></div></div></section></div><section class="tl-quotes tl-reveal" aria-label="peer reviews"><div class="tl-facet-head tl-q-headrow"><span class="tl-facet-sub">2022–2024 · anymind</span><span class="tl-facet-name tl-q-name">同事怎麼說<em aria-hidden="true">peer reviews</em></span></div><div class="tl-q-rows"><div class="tl-q-row r0"><div class="tl-q-track"><div class="tl-q-set" aria-hidden="false"><figure class="tl-q-card"><blockquote>跟他共事很愉快，對團隊和專案永遠帶著正面的態度。</blockquote><p class="tl-q-orig">A pleasure to work with, always has a positive attitude to the team and project.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>他是很有價值的 team player，大家有問題都會很自然地去找他請教。</blockquote><p class="tl-q-orig">He&#x27;s a valuable team player, someone people can easily turn to for advice.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>團隊裡溝通最積極的人——對自己負責的程式碼完全當責，甚至連別人寫進來的程式碼也一樣。</blockquote><p class="tl-q-orig">The most communicative on the team — takes full ownership on the code he&#x27;s responsible for, and even for code introduced by other developers.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2022</figcaption></figure><figure class="tl-q-card"><blockquote>從第一天起就很好親近——溝通體貼周到，親切的性格始終如一。</blockquote><p class="tl-q-orig">Approachable since Day 1 — communicates in an accommodating manner, consistent with his pleasant personality.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2023</figcaption></figure><figure class="tl-q-card"><blockquote>展現出令人讚賞的能力，能有效率地掌控並執行大量複雜的任務。</blockquote><p class="tl-q-orig">Demonstrates a commendable ability to manage and execute a high volume of complex tasks efficiently.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2023</figcaption></figure><figure class="tl-q-card"><blockquote>只要有問題，我知道他一定會放下手邊的事來幫忙。</blockquote><p class="tl-q-orig">If there is an issue I know he will take time out from what he is doing to help.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2024</figcaption></figure></div><div class="tl-q-set" aria-hidden="true"><figure class="tl-q-card"><blockquote>跟他共事很愉快，對團隊和專案永遠帶著正面的態度。</blockquote><p class="tl-q-orig">A pleasure to work with, always has a positive attitude to the team and project.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>他是很有價值的 team player，大家有問題都會很自然地去找他請教。</blockquote><p class="tl-q-orig">He&#x27;s a valuable team player, someone people can easily turn to for advice.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>團隊裡溝通最積極的人——對自己負責的程式碼完全當責，甚至連別人寫進來的程式碼也一樣。</blockquote><p class="tl-q-orig">The most communicative on the team — takes full ownership on the code he&#x27;s responsible for, and even for code introduced by other developers.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2022</figcaption></figure><figure class="tl-q-card"><blockquote>從第一天起就很好親近——溝通體貼周到，親切的性格始終如一。</blockquote><p class="tl-q-orig">Approachable since Day 1 — communicates in an accommodating manner, consistent with his pleasant personality.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2023</figcaption></figure><figure class="tl-q-card"><blockquote>展現出令人讚賞的能力，能有效率地掌控並執行大量複雜的任務。</blockquote><p class="tl-q-orig">Demonstrates a commendable ability to manage and execute a high volume of complex tasks efficiently.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2023</figcaption></figure><figure class="tl-q-card"><blockquote>只要有問題，我知道他一定會放下手邊的事來幫忙。</blockquote><p class="tl-q-orig">If there is an issue I know he will take time out from what he is doing to help.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2024</figcaption></figure></div></div></div><div class="tl-q-row r1"><div class="tl-q-track"><div class="tl-q-set" aria-hidden="false"><figure class="tl-q-card"><blockquote>好的 leader 不只要技術強，還要讓人想跟他一起工作——我覺得 Reacher 正走在這條路上。</blockquote><p class="tl-q-orig">A good leader should not only be technically skilled but also make people want to work with him — I think Reacher is on that direction.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>有任何問題找他都毫無壓力——對專案和寫程式本身始終充滿熱情。</blockquote><p class="tl-q-orig">Really easy to approach with any questions or to get advice from — always enthusiastic about the project and coding in general.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2023</figcaption></figure><figure class="tl-q-card"><blockquote>他講解東西時總會把技術細節拆開來說明，這點我非常感激。</blockquote><p class="tl-q-orig">He always tries to break down technical bits and pieces when he explains stuff, which I really appreciate.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>在前端開發與專案管理上投入很多，同時帶新人——總是給出很棒的建議和鼓勵，尤其是對經驗較淺的人。</blockquote><p class="tl-q-orig">Pays many efforts on FE development &amp; project management while educating new members — gives great advice and encouragement, especially for those less experienced.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>我從他身上學到怎麼在 Slack 上好好溝通——因為我們遠端工作，開放的溝通很重要。</blockquote><p class="tl-q-orig">I learned from him how to have good communication on Slack — because we work remotely, open communication matters.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>回覆快、樂於幫忙，跟他共事、問任何事都很輕鬆。</blockquote><p class="tl-q-orig">Responsive, helpful and very easy to work with and ask anything.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2022</figcaption></figure></div><div class="tl-q-set" aria-hidden="true"><figure class="tl-q-card"><blockquote>好的 leader 不只要技術強，還要讓人想跟他一起工作——我覺得 Reacher 正走在這條路上。</blockquote><p class="tl-q-orig">A good leader should not only be technically skilled but also make people want to work with him — I think Reacher is on that direction.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2024</figcaption></figure><figure class="tl-q-card"><blockquote>有任何問題找他都毫無壓力——對專案和寫程式本身始終充滿熱情。</blockquote><p class="tl-q-orig">Really easy to approach with any questions or to get advice from — always enthusiastic about the project and coding in general.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2023</figcaption></figure><figure class="tl-q-card"><blockquote>他講解東西時總會把技術細節拆開來說明，這點我非常感激。</blockquote><p class="tl-q-orig">He always tries to break down technical bits and pieces when he explains stuff, which I really appreciate.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>在前端開發與專案管理上投入很多，同時帶新人——總是給出很棒的建議和鼓勵，尤其是對經驗較淺的人。</blockquote><p class="tl-q-orig">Pays many efforts on FE development &amp; project management while educating new members — gives great advice and encouragement, especially for those less experienced.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>我從他身上學到怎麼在 Slack 上好好溝通——因為我們遠端工作，開放的溝通很重要。</blockquote><p class="tl-q-orig">I learned from him how to have good communication on Slack — because we work remotely, open communication matters.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jan 2022</figcaption></figure><figure class="tl-q-card"><blockquote>回覆快、樂於幫忙，跟他共事、問任何事都很輕鬆。</blockquote><p class="tl-q-orig">Responsive, helpful and very easy to work with and ask anything.</p><figcaption>peer review · anymind<!-- --> · <!-- -->jul 2022</figcaption></figure></div></div></div></div></section><div class="tl-end"><canvas class="tl-outro-cv" aria-hidden="true"></canvas><section class="tl-outro tl-reveal"><p class="big">白天，我把 AI 變成整個團隊的基礎設施。<br>下班，我把同一套能力推到極致——<span class="g">自己蓋一條會自主出貨的 agent 管線</span>。</p><p class="sig">— 你剛剛看過的 Lab，就是它跑出來的。</p></section><p class="tl-colo">natee · 10+ yrs front-end · 7 at anymind · bangkok</p></div></section></div><!--$--><!--/$--><script src="/natee-lab-site/_next/static/chunks/webpack-b5e332dae746a001.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[5341,[],\"\"]\n3:I[25,[],\"\"]\n6:I[5104,[],\"OutletBoundary\"]\n8:I[7158,[],\"AsyncMetadataOutlet\"]\na:I[5104,[],\"ViewportBoundary\"]\nc:I[5104,[],\"MetadataBoundary\"]\nd:\"$Sreact.suspense\"\nf:I[4431,[],\"\"]\n:HL[\"/natee-lab-site/_next/static/css/aee960fc3a6992d7.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"WB7GeLrlG8pYHojUEDHh4\",\"p\":\"/natee-lab-site\",\"c\":[\"\",\"zh-TW\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[[\"lang\",\"zh-TW\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[[\"lang\",\"zh-TW\",\"d\"],[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/natee-lab-site/_next/static/css/aee960fc3a6992d7.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],\"$L4\"]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$L5\",null,[\"$\",\"$L6\",null,{\"children\":[\"$L7\",[\"$\",\"$L8\",null,{\"promise\":\"$@9\"}]]}]]}],{},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$La\",null,{\"children\":\"$Lb\"}],null],[\"$\",\"$Lc\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$d\",null,{\"fallback\":null,\"children\":\"$Le\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$f\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"4:[\"$\",\"html\",null,{\"lang\":\"zh-TW\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700\u0026family=Noto+Serif+TC:wght@400..700\u0026family=JetBrains+Mono:wght@400;500;600;700\u0026family=Space+Grotesk:wght@400;500;600;700\u0026display=swap\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"className\":\"antialiased\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]\n"])</script><script>self.__next_f.push([1,"10:I[4826,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"ProgressNav\"]\n11:I[3343,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"LocaleSwitcher\"]\n12:I[7173,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"CircuitHero\"]\n13:I[9281,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"PhuttanChapter\"]\n14:I[4620,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"FamsChapter\"]\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"div\",null,{\"className\":\"theme-lab min-h-dvh bg-bg text-text\",\"children\":[[\"$\",\"$L10\",null,{}],[\"$\",\"div\",null,{\"className\":\"pointer-events-none fixed inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-5 text-xs uppercase\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-[13px] tracking-[0.24em] text-signature\",\"children\":\"✦ Natee™\"}],[\"$\",\"span\",null,{\"className\":\"pointer-events-auto\",\"children\":[\"$\",\"$L11\",null,{\"current\":\"zh-TW\"}]}]]}],[\"$\",\"$L12\",null,{\"headline\":\"Natee\\nAI Lab\",\"tagline\":\"// PHUTTAN · PIPELINE · FAMS and more\",\"hint\":\"順著這條線\"}],[\"$\",\"main\",null,{\"className\":\"relative z-[2] mt-[175vh]\",\"children\":[[\"$\",\"$L13\",null,{\"dict\":{\"eyebrow\":\"// the core of the lab\",\"title\":\"Phuttan\",\"tagline\":\"Agent orchestrator — messages routed, agents dispatched, code shipped.\",\"aiAssistant\":\"ai assistant\",\"demo\":{\"message\":\"「現在曼谷幾點？」\",\"core\":\"PHUTTAN\",\"reply\":\"🕓 04:12 · UTC+7\",\"scenes\":[{\"msg\":\"「查下週飛曼谷的機票」\",\"cap\":\"✈ flight watch\",\"desc\":\"單程機票搜尋，附 60 天價格走勢圖\",\"reply\":\"✈ 最低 NT$6,842 · 附 60 天價格趨勢圖\"},{\"msg\":\"「這張照片裡是什麼？」\",\"cap\":\"🖼 vision\",\"desc\":\"看得懂訊息裡的圖片與截圖\",\"reply\":\"🖼 黎明寺與昭披耶河——日落後塔燈初亮，江上一艘渡輪\"},{\"msg\":\"「處理 issue #139」\",\"cap\":\"⚙ dispatch\",\"desc\":\"開 issue 派工給 agents——接下面那條產線\",\"reply\":\"⚙ dispatch → agents → pr → review → merge ✓\"},{\"msg\":\"「遙控昨天設計網站那個對話」\",\"cap\":\"📡 remote control\",\"desc\":\"把先前的對話喚醒成手機可接手的 session\",\"reply\":\"🔗 已喚醒，連結傳到你手機\"},{\"msg\":\"「以後叫我 Natee 哥哥」\",\"cap\":\"🗣 per-user persona\",\"desc\":\"記住每個人偏好的稱呼，以對方的語言回覆\",\"reply\":\"記住了，Natee 哥哥～以後都這樣叫 ☺\"},{\"msg\":\"สวัสดีครับ ตอนนี้กี่โมงแล้ว?\",\"cap\":\"🕓 time\",\"desc\":\"跨時區報時——以對方書寫的語言回答\",\"reply\":\"🕓 ตอนนี้ 16:42 น. ค่ะ\"}]},\"vignote1\":\"每句話先經過本地小模型選擇工具、抽取參數。已知任務交給確定性腳本，閒聊由本地模型回答，需要深度推理才升級到雲端；判斷用的模型可以抽換。\",\"harnessLoop\":\"harness × loop engineering\",\"vignote2\":\"重點不在用了哪個模型，在模型外面那一層工程——給 agent 一副可靠的框架（harness），和一組會自己收斂的迴圈（loop）。\",\"track\":{\"issue\":\"issue #142\",\"agent\":\"agent\",\"pr\":\"pr\",\"review\":\"review\",\"docs\":\"docs\",\"merge\":\"merge\",\"nextIssue\":\"next issue\",\"fix\":\"fix ↺\"},\"harness\":{\"title\":\"Harness engineering\",\"sub\":\"把 agent 圍進可靠的工作框架\",\"bullets\":[\"交辦時給 agent 一份寫清楚的規格和驗收清單；它回報的是固定格式的結果——做完了沒、卡在哪，系統直接看得懂，不用人猜\",\"修不好最多重修兩輪就停；做太久或中途斷線，系統都知道怎麼收拾，不會掛在那裡等人救\",\"每一步重跑都安全——做過的事都有記號，不會重複派工、重複留言\"]},\"loopCol\":{\"title\":\"Loop engineering\",\"sub\":\"讓迴圈自己收斂\",\"bullets\":[\"一張 issue 開出來，從寫程式、審查、補文件到合併，整條路自己走完，人不用盯\",\"中途出事——測試失敗、審查斷掉、程式碼衝突、票漏了沒派——系統定期巡一遍，自己撿回來繼續\",\"票之間可以標「先做完那張、再做這張」，前一張合併，下一張自動開工\",\"敢讓它全自動的原因：每一輪都要過測試和驗收條件，過不了就不往下走\"]},\"statNumber\":\"139\",\"statLabel\":\"issues → merged prs, hands-free\",\"punch\":\"整條產線上，人只出現在兩個位置：開頭把需求寫清楚，結尾點頭放行；中間的一切，交給流程。\",\"dogfood\":\"Natee AI Lab 幾乎所有的開發都跑在它上面：fams 的每一個功能、這個網站本身。\",\"stack\":\"stack — bun · typescript · slack api · github api · local model + cloud agents\",\"slack\":{\"issue\":\"Natee 哥，接到 issue #{n}，我來跑這條自動化流程 🛠️\",\"dispatch\":\"派工給 agent 了 — 先寫驗收測試、再實作（SDD → TDD）\",\"prOpened\":\"Pull request opened by phuttan[bot]\",\"review1\":\"PR 開好了，我先 review 一輪 👀\",\"ciFail\":\"CI ✗ — some checks were not successful\",\"selfHeal\":\"CI 紅了，我自動修一輪 🔧\",\"prSync\":\"Pull request synchronized · CI ✓\",\"review2\":\"修好了，再 review 一次…\",\"lgtm\":\"verdict：LGTM ✅ 可以 merge 了\",\"docs\":\"回補文件 reality 段完成 ✍️\",\"merged\":\"@Natee CI 也綠了，我已經幫你自動 merge 好啦！🎉\",\"prMerged\":\"Pull request merged by phuttan[bot]\",\"next\":\"#{n} 解鎖，接著跑下一張，我先去接了 ⟳\",\"features\":[\"arun · 捲動接住強控制 scroll-catch\",\"fams · 逐月績效 /history 日/月/年粒度\",\"arun · 黎明寺 seam 交叉淡入 + 文字倒放\"],\"app\":\"應用程式\"}}}],[\"$\",\"$L14\",null,{\"dict\":{\"eyebrow\":\"// shipped by Phuttan\",\"title\":\"FAMS\",\"tagline\":\"Fubon Asset Management System — a real-money portfolio, live.\",\"taglineZh2\":\"接著真實券商、管著真實部位的資產系統——整套由上一章的產線交付。\",\"shots\":{\"overviewAlt\":\"FAMS 總覽——實機畫面，金額遮蔽\",\"overviewCaption\":\"實機畫面 — 金額由它自己的「隱藏金額」功能遮蔽 · 持倉與績效為真\",\"chartAlt\":\"FAMS K 線個股頁——實機畫面\",\"chartCaption\":\"K 線個股頁 — 看盤、畫線、下單，同一頁完成 · 金額同樣自動遮蔽\"},\"logTitle\":\"shipping log\",\"log\":[{\"date\":\"06-15\",\"text\":\"專案骨架——Next.js + 設計系統接線\",\"badge\":\"\"},{\"date\":\"06-17\",\"text\":\"KPI、持倉、資產配置——接上富邦真值\",\"badge\":\"×3\"},{\"date\":\"06-18\",\"text\":\"觀察名單抽屜 + 即時行情鏈路（WebSocket → SSE）\",\"badge\":\"×2\"},{\"date\":\"06-19\",\"text\":\"持倉與配置即時化、目錄結構重構\",\"badge\":\"×2\"},{\"date\":\"06-20\",\"text\":\"淨值歷史、走勢圖、績效面板、每日快照、載入狀態\",\"badge\":\"×5\"},{\"date\":\"06-28\",\"text\":\"K 線圖——個股詳情頁、指標、畫圖工具\",\"badge\":\"\"},{\"date\":\"07-01\",\"text\":\"全域導覽熱鍵、隱藏金額、名稱來源修正\",\"badge\":\"×3\"},{\"date\":\"07-02\",\"text\":\"逐月績效表\",\"badge\":\"\"},{\"date\":\"07-04\",\"text\":\"交易側欄——下單表單、五檔、送單\",\"badge\":\"×4\"},{\"date\":\"07-04\",\"text\":\"富邦維護模式——斷線韌性\",\"badge\":\"·進行中\"}],\"statNumber\":\"24\",\"statLabel\":\"features · 9 shipping days — 每一個都是 spec → loop → merge\",\"stack\":\"stack — next.js app router · react server components · tailwind v4 · bun:sqlite · fubon sdk · websocket → sse\"}}],\"$L15\"]}],\"$L16\",\"$L17\",\"$L18\"]}]\n"])</script><script>self.__next_f.push([1,"19:I[5644,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"DsChapter\"]\n1a:I[8613,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"AboutSeam\"]\n1b:I[7518,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"Timeline\"]\n1c:I[8122,[\"148\",\"static/chunks/148-74f944faa3aed879.js\",\"911\",\"static/chunks/app/%5Blang%5D/page-d741562ef94288a2.js\"],\"ScrollCatch\"]\n"])</script><script>self.__next_f.push([1,"15:[\"$\",\"$L19\",null,{\"dict\":{\"eyebrow\":\"// one system, two worlds\",\"title\":\"Arun\",\"tag\":\"One design system, two temperatures.\",\"tagZh\":\"Lab 的夜與 About 的暖，用的是同一套 token——換世界換的是值，不是版面。整套在 \u003cb\u003eclaude.ai/design\u003c/b\u003e 對稿定色，同步成 \u003cb\u003e@natee-lab/ui\u003c/b\u003e，由 Phuttan 的產線出貨到每個專案。\",\"stack\":\"stack — tailwindcss · react · shadcn · claude.ai/design\",\"sourceHead\":\"// where the palette came from\",\"photoAlt\":\"黎明寺黃昏——色票的來源\",\"marks\":[\"--gold · 塔身的金\",\"--terracotta · 燒紅的天\",\"--bg · 暮色的河\"],\"srcCaption\":\"這套色票不是憑空調的——取自這張\u003cb\u003e黎明寺\u003c/b\u003e（Wat Arun）的黃昏。塔身的\u003cb\u003e金\u003c/b\u003e成了整站的簽名色，燒紅的天成了 About 世界的 \u003ct\u003eterracotta\u003c/t\u003e，暮色的河成了 Lab 世界的近黑底。一張照片裡同時裝著兩個世界，中間那道黃昏就是它們的接縫——連 app 的名字 \u003cb\u003earun\u003c/b\u003e（อรุณ・黎明）都來自這座廟。\",\"switchLab\":\"night — lab\",\"switchWarm\":\"warm — about\",\"switchNote\":\"\u003ctap\u003e↑ 按一下試試\u003c/tap\u003e——底下的色票和整章一起換世界。變的只有變數的值，版面一行沒動。\",\"wallNote\":\"滑過（或點）色塊，看它的名字和值。\",\"specDisplay\":\"display — space grotesk 700\\n84 · 54 · 15\",\"specText\":\"text — pingfang · noto sans tc · 15 / 1.75\",\"specTextZh\":\"永字八法：一個字，寫全所有筆畫。\",\"specData\":\"data — jetbrains mono · tabular\\n台股慣例：紅漲 · teal 跌\",\"close\":\"從那張黎明寺取色開始，字級、間距、每個元件，都是在 \u003cb\u003eclaude.ai/design\u003c/b\u003e 裡和 Claude 一起對稿定下來的——這一章你看到的每個顏色和字，包括剛剛那一下切換，都讀自這套 token。\",\"flow\":\"designed in claude.ai/design · synced as @natee-lab/ui · shipped by phuttan\"}}]\n"])</script><script>self.__next_f.push([1,"16:[\"$\",\"$L1a\",null,{\"dict\":{\"bridge\":\"曼谷的第八年。\\n同一雙手，換了另一端。\",\"sign\":\"— Natee\",\"sub\":\"software engineer · ai · bangkok since 2018\",\"tailTitle\":\"NEXT — THE TIMELINE\",\"tailSub\":\"2018 · 2022 · 2024 — 施工中\",\"fin\":\"— the line continues —\",\"colo\":\"this site — next static export · @natee-lab/ui · github actions → pages · shipped by the pipeline\"},\"caption\":\"這套色票不是憑空調的——取自這張\u003cb\u003e黎明寺\u003c/b\u003e（Wat Arun）的黃昏。塔身的\u003cb\u003e金\u003c/b\u003e成了整站的簽名色，燒紅的天成了 About 世界的 \u003ct\u003eterracotta\u003c/t\u003e，暮色的河成了 Lab 世界的近黑底。一張照片裡同時裝著兩個世界，中間那道黃昏就是它們的接縫——連 app 的名字 \u003cb\u003earun\u003c/b\u003e（อรุณ・黎明）都來自這座廟。\",\"marks\":\"$15:props:dict:marks\"}]\n"])</script><script>self.__next_f.push([1,"17:[\"$\",\"$L1b\",null,{\"dict\":{\"eyebrow\":\"// bangkok · 7 years at anymind · 4 products, 0 → production\",\"title\":\"十年前端，\u003cbr\u003e做到\u003cg\u003e平台架構\u003c/g\u003e。\",\"intro\":\"在一間 TSE 上市的跨國 SaaS，我一直是團隊裡負責\u003cb\u003e架構決策、跨團隊協調、效能優化\u003c/b\u003e的那個人——拿過 Best Engineer。\",\"metrics\":[{\"n\":\"50%\",\"l\":\"API 請求砍半\u003cbr\u003e推動 GraphQL 取代 REST\"},{\"n\":\"93–97\",\"l\":\"PageSpeed · 320kb bundle\u003cbr\u003e東南亞低網速市場\"},{\"n\":\"×4\",\"l\":\"各自獨立 deploy 的團隊\u003cbr\u003e一座 Nx monorepo\"},{\"n\":\"−55%\",\"l\":\"CLAUDE.md 723→329 行\u003cbr\u003e全團隊 AI context\"}],\"eras\":[{\"year\":\"設計\",\"alt\":\"design\",\"sub\":\"2013–\",\"co\":\"icmenu · ui / 品牌 / 印刷 → 前端\",\"bd\":\"從 \u003cb\u003eUI／視覺設計\u003c/b\u003e入行，親手把自己的設計刻成前端。到今天，\u003cg\u003e這個站的每一筆還是自己畫的\u003c/g\u003e——設計是底色。\"},{\"year\":\"工程\",\"alt\":\"engineering\",\"sub\":\"2014–\",\"co\":\"eztravel · migme · johnsons · hopes · anymind\",\"bd\":\"台灣做到東南亞、前端做到\u003cb\u003e平台架構\u003c/b\u003e——SSR、效能、跨國團隊，到 \u003cb\u003eNx monorepo\u003c/b\u003e 讓\u003cg\u003e四個團隊共用一套 codebase、又能各自 deploy\u003c/g\u003e。路上拿過 Best Engineer。\",\"converge\":true},{\"year\":\"AI\",\"alt\":\"agents\",\"sub\":\"2024–\",\"co\":\"anymind ai 基礎設施 → natee ai lab\",\"bd\":\"白天，把 AI 變成\u003cb\u003e整個團隊的基礎設施\u003c/b\u003e——共用 skills、CLAUDE.md、SDD。下班，\u003cg\u003e自己蓋一條會自主出貨的 agent 管線\u003c/g\u003e——就是你剛剛看過的 Lab。\",\"gold\":true}],\"converge\":[\"4 teams\",\"deploy\",\"independently\",\"one monorepo\",\"one system\"],\"outro\":\"白天，我把 AI 變成整個團隊的基礎設施。\u003cbr\u003e下班，我把同一套能力推到極致——\u003cg\u003e自己蓋一條會自主出貨的 agent 管線\u003c/g\u003e。\",\"outroSig\":\"— 你剛剛看過的 Lab，就是它跑出來的。\",\"colo\":\"natee · 10+ yrs front-end · 7 at anymind · bangkok\",\"quotesHead\":\"同事怎麼說\",\"quotesTag\":\"peer review · anymind\",\"quotes\":[\"跟他共事很愉快，對團隊和專案永遠帶著正面的態度。\",\"他是很有價值的 team player，大家有問題都會很自然地去找他請教。\",\"團隊裡溝通最積極的人——對自己負責的程式碼完全當責，甚至連別人寫進來的程式碼也一樣。\",\"從第一天起就很好親近——溝通體貼周到，親切的性格始終如一。\",\"展現出令人讚賞的能力，能有效率地掌控並執行大量複雜的任務。\",\"只要有問題，我知道他一定會放下手邊的事來幫忙。\",\"好的 leader 不只要技術強，還要讓人想跟他一起工作——我覺得 Reacher 正走在這條路上。\",\"有任何問題找他都毫無壓力——對專案和寫程式本身始終充滿熱情。\",\"他講解東西時總會把技術細節拆開來說明，這點我非常感激。\",\"在前端開發與專案管理上投入很多，同時帶新人——總是給出很棒的建議和鼓勵，尤其是對經驗較淺的人。\",\"我從他身上學到怎麼在 Slack 上好好溝通——因為我們遠端工作，開放的溝通很重要。\",\"回覆快、樂於幫忙，跟他共事、問任何事都很輕鬆。\"],\"quotesOrig\":[\"A pleasure to work with, always has a positive attitude to the team and project.\",\"He's a valuable team player, someone people can easily turn to for advice.\",\"The most communicative on the team — takes full ownership on the code he's responsible for, and even for code introduced by other developers.\",\"Approachable since Day 1 — communicates in an accommodating manner, consistent with his pleasant personality.\",\"Demonstrates a commendable ability to manage and execute a high volume of complex tasks efficiently.\",\"If there is an issue I know he will take time out from what he is doing to help.\",\"A good leader should not only be technically skilled but also make people want to work with him — I think Reacher is on that direction.\",\"Really easy to approach with any questions or to get advice from — always enthusiastic about the project and coding in general.\",\"He always tries to break down technical bits and pieces when he explains stuff, which I really appreciate.\",\"Pays many efforts on FE development \u0026 project management while educating new members — gives great advice and encouragement, especially for those less experienced.\",\"I learned from him how to have good communication on Slack — because we work remotely, open communication matters.\",\"Responsive, helpful and very easy to work with and ask anything.\"],\"quotesDate\":[\"jan 2024\",\"jan 2024\",\"jul 2022\",\"jan 2023\",\"jul 2023\",\"jul 2024\",\"jan 2024\",\"jul 2023\",\"jan 2022\",\"jan 2022\",\"jan 2022\",\"jul 2022\"],\"quotesAlt\":\"peer reviews\",\"quotesSub\":\"2022–2024 · anymind\"}}]\n"])</script><script>self.__next_f.push([1,"18:[\"$\",\"$L1c\",null,{}]\n"])</script><script>self.__next_f.push([1,"b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n7:null\n"])</script><script>self.__next_f.push([1,"9:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Natee AI Lab\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Natee 的個人網站與實驗室。\"}],[\"$\",\"link\",\"2\",{\"rel\":\"alternate\",\"hrefLang\":\"zh-TW\",\"href\":\"https://reacheryin.github.io/natee-lab-site/zh-TW/\"}],[\"$\",\"link\",\"3\",{\"rel\":\"alternate\",\"hrefLang\":\"en\",\"href\":\"https://reacheryin.github.io/natee-lab-site/en/\"}],[\"$\",\"link\",\"4\",{\"rel\":\"alternate\",\"hrefLang\":\"x-default\",\"href\":\"https://reacheryin.github.io/natee-lab-site/en/\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"e:\"$9:metadata\"\n"])</script></body></html>
