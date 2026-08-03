@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>v2 放大版 · About Natee — demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#efe6d6; --ink:#3a2e26; --terra:#a8593a; --terra-deep:#7c4128;
+  --dim:#8a7663; --gold:#bd8b2c; --line:#cbb89b; --line-soft:#e6dbc8;
+  --mono:"JetBrains Mono",monospace;
+  --serif:"Fraunces","Noto Serif TC",Georgia,serif;
+  --serifzh:"Noto Serif TC","Fraunces",serif;
+  --pad:clamp(22px,6vw,90px);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--serifzh)}
+::selection{background:var(--terra);color:var(--paper);-webkit-text-fill-color:var(--paper)}
+
+/* 半色調暈影背景：整頁固定，內容浮在上面 */
+#vig{position:fixed;inset:0;z-index:0;pointer-events:none}
+
+.wrap{position:relative;z-index:1;height:100vh;overflow:hidden;
+  padding:0 var(--pad) 13vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center}
+
+/* 人像：跟站上一樣的流動 dither，但用墨色而非陶土（照你給的參考），
+   網屏也更細（STEP 3 / LW 1）好撐住細節 */
+.fig{display:block;flex:none;width:min(92vw,1400px,117vh);aspect-ratio:1300/867;
+  -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 58%,transparent 100%);
+  margin-bottom:clamp(-215px,-14vw,-64px)} /* 負值＝大標壓進身體，人像才吃得到高度 */
+
+/* 大標：跟 Interfaces / agents 完全同一組參數 */
+.hi{position:relative;font-family:var(--serif);font-weight:600;
+  font-size:clamp(46px,11.5vw,200px);line-height:.98;letter-spacing:-.038em;
+  color:var(--ink);margin:0;text-align:center;
+  text-shadow:.03em .03em 0 color-mix(in srgb,var(--terra) 52%,transparent)}
+.hi .g{color:var(--gold);text-shadow:none}
+/* 自我介紹那句：襯線、比大標小兩階，貼著大標下方 */
+.sub{position:relative;margin:clamp(14px,1.6vw,22px) 0 0;text-align:center;
+  font-family:var(--serif);font-size:clamp(15px,1.5vw,20px);line-height:1.7;color:var(--ink);opacity:.78}
+
+@media (max-width:760px){
+  .fig{width:min(112vw,150vh);margin-bottom:clamp(-96px,-20vw,-30px)}
+}
+</style>
+</head>
+<body>
+
+<canvas id="vig" aria-hidden="true"></canvas>
+
+<main class="wrap">
+  <canvas class="fig" id="fig" aria-hidden="true"></canvas>
+  <h1 class="hi">Hi, I’m <span class="g">Natee.</span></h1>
+  <p class="sub">設計跟程式，我都自己來。</p>
+</main>
+
+
+<script>
+// 8×8 Bayer：背景與人像共用同一張門檻表
+const BAYER = [
+  0,48,12,60,3,51,15,63, 32,16,44,28,35,19,47,31,
+  8,56,4,52,11,59,7,55,  40,24,36,20,43,27,39,23,
+  2,50,14,62,1,49,13,61, 34,18,46,30,33,17,45,29,
+  10,58,6,54,9,57,5,53,  42,26,38,22,41,25,37,21,
+].map(v => (v + 0.5) / 64);
+
+// 平滑階梯：中心無墨與邊緣落墨之間的過渡才不會出現硬邊
+const ss = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+
+// ── 背景：跟人像同一支引擎（短劃 + 8×8 Bayer + 流動），
+//    差別只在亮度場是「算出來的徑向漸層」而不是一張圖 ──
+// 記號庫：以「點」為主，大小做變化，不用長度。
+// 為什麼不是長短直劃——那會讀成下雨：記號全部同向、又用長度變化，
+// 垂直散佈就是雨絲的特徵。改成點為主、方向互相抵消的短刻，才是紙的顆粒而不是天氣。
+const MARKS = [
+  [[0,0]],                              // 小點
+  [[0,0]],                              // 小點（加權，主調）
+  [[0,0]],                              // 小點（加權）
+  [[0,0],[1,0],[0,1],[1,1]],            // 大點
+  [[0,0],[1,0],[0,1],[1,1]],            // 大點（加權）
+  [[0,0],[1,0]],                        // 橫短刻
+  [[0,0],[0,1]],                        // 直短刻（與橫刻等量，方向互相抵消）
+  [[0,0],[1,0],[2,0]],                  // 橫中刻
+];
+const HASH = (x, y) => (((x * 73856093) ^ (y * 19349663)) >>> 0);
+
+(function vignette() {
+  const cv = document.getElementById('vig'), ctx = cv.getContext('2d');
+  const INK = [168, 89, 58];           // --terra
+  const A = 78;                        // 「淡」：直接壓 alpha，不動疏密
+  const STEP = 5, FLOW = 16;   // 動態比人像強：每秒推 16 列（人像是 6）
+  let W = 0, H = 0, R = 1, out = null, flow = 0, lastT = 0;
+  const size = () => {
+    W = cv.width = Math.round(innerWidth);
+    H = cv.height = Math.round(innerHeight);
+    R = Math.hypot(W, H) * 0.5;
+    out = ctx.createImageData(W, H);
+  };
+  size();
+  addEventListener('resize', size);
+
+  const draw = now => {
+    requestAnimationFrame(draw);
+    const time = now / 1000, dt = lastT ? Math.min(0.05, time - lastT) : 0; lastT = time;
+    flow += dt * FLOW; const fl = Math.floor(flow);
+    // 光心漂移與呼吸都比第一版明顯，但仍屬環境等級
+    const cx = W * (0.5 + 0.10 * Math.sin(time * 0.16));
+    const cy = H * (0.5 + 0.08 * Math.cos(time * 0.11));
+    const breathe = 0.06 * Math.sin(time * 0.34);
+    const od = out.data; od.fill(0);
+    // 逐「格」取樣（不是逐像素列）——逐列掃描時連續落墨會連成直線，所以原本只有線。
+    // 每格通過門檻就蓋一個記號，記號種類由座標雜湊決定 → 線、點、方、十字混在一起。
+    for (let cx0 = 0; cx0 < W; cx0 += STEP) {
+      for (let cy0 = 0; cy0 < H; cy0 += STEP) {
+        const d = Math.hypot(cx0 - cx, cy0 - cy) / R;
+        // v 小才落墨：中心 v 高＝乾淨，邊緣 v 低＝落墨（方向寫反會變成中間一團墨）
+        const v = 1.14 - 0.80 * ss(0.10, 1.0, d) + breathe;
+        if (v >= BAYER[(((cy0 + fl) / STEP | 0) & 7) * 8 + (((cx0 / STEP) | 0) & 7)]) continue;
+        const gx = cx0 / STEP | 0, gy = cy0 / STEP | 0, h = HASH(gx, gy);
+        const m = MARKS[h % MARKS.length];
+        // 半格抖動：位置隨格子固定（不逐幀跳），讓整片不落在完美方格上
+        const jx = (h >> 3) & 1, jy = (h >> 5) & 1; // 各只 0/1：不規則但不產生方向感
+        for (let i = 0; i < m.length; i++) {
+          const px = cx0 + m[i][0] + jx, py = cy0 + m[i][1] + jy;
+          if (px >= W || py >= H) continue;
+          const q = (py * W + px) * 4;
+          od[q] = INK[0]; od[q+1] = INK[1]; od[q+2] = INK[2]; od[q+3] = A;
+        }
+      }
+    }
+    ctx.putImageData(out, 0, 0);
+  };
+  requestAnimationFrame(draw);
+})();
+
+// ── 人像：站上 mountDither 的精簡移植（與背景共用 BAYER）──
+(function figure() {
+  const cv = document.getElementById('fig'), fx = cv.getContext('2d');
+  const STEP = 3, LW = 1, CON = 1.5, BRG = -0.04, FLOW = 6;
+  const INK = [58, 46, 38];      // --ink：照參考圖用墨色，不是陶土
+  let W = 0, H = 0, lum = null, out = null, flow = 0, lastT = 0;
+  const img = new Image();
+  const build = () => {
+    W = cv.width = Math.max(80, Math.round(cv.offsetWidth));
+    H = cv.height = Math.max(80, Math.round(cv.offsetHeight));
+    if (!img.complete || !img.naturalWidth) return;
+    const b = document.createElement('canvas'); b.width = W; b.height = H;
+    const bx = b.getContext('2d');
+    const s = Math.min(W / img.naturalWidth, H / img.naturalHeight);   // contain：整個人要在框內
+    bx.drawImage(img, (W - img.naturalWidth * s) / 2, (H - img.naturalHeight * s) / 2,
+      img.naturalWidth * s, img.naturalHeight * s);
+    const d = bx.getImageData(0, 0, W, H).data;
+    lum = new Float32Array(W * H);
+    for (let i = 0, p = 0; i < W * H; i++, p += 4) {
+      const l = (0.299 * d[p] + 0.587 * d[p+1] + 0.114 * d[p+2]) / 255;
+      lum[i] = 1 - (d[p+3] / 255) * (1 - l);   // 去背：越透明越亮＝越不落墨
+    }
+    out = fx.createImageData(W, H);
+  };
+  const draw = t => {
+    requestAnimationFrame(draw);
+    if (!lum || !out) return;
+    const time = t / 1000, dt = lastT ? Math.min(0.05, time - lastT) : 0; lastT = time;
+    flow += dt * FLOW; const fl = Math.floor(flow);
+    const breathe = 0.03 * Math.sin(time * 0.85);
+    const od = out.data; od.fill(0);
+    for (let x = 0; x < W; x += STEP) {
+      for (let y = 0; y < H; y++) {
+        let v = lum[y * W + x];
+        v = (v - 0.5) * CON + 0.5 + BRG + breathe;
+        if (v < BAYER[((y + fl) & 7) * 8 + (x & 7)]) {
+          for (let k = 0; k < LW && x + k < W; k++) {
+            const q = (y * W + x + k) * 4;
+            od[q] = INK[0]; od[q+1] = INK[1]; od[q+2] = INK[2]; od[q+3] = 255;
+          }
+        }
+      }
+    }
+    fx.putImageData(out, 0, 0);
+  };
+  img.onload = build; img.src = 'me-actual.png';
+  new ResizeObserver(() => build()).observe(cv);
+  requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>

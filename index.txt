@@ -1,61 +1,15 @@
 1:"$Sreact.fragment"
 2:I[5341,[],""]
 3:I[25,[],""]
-5:I[8329,["974","static/chunks/app/page-7c7078134b8ab25b.js"],"TpeClock"]
-22:I[4431,[],""]
-:HL["/natee-lab-site/_next/static/css/4cb0a62064d52786.css","style"]
-4:T47b,
-        .uc-ln{fill:none;stroke:var(--accent);stroke-width:2;opacity:.55}
-        .uc-coil{fill:none;stroke:var(--accent);stroke-width:2;opacity:.9}
-        .uc-body{fill:var(--surface);stroke:var(--accent);stroke-width:2}
-        .uc-seg{fill:var(--signature);opacity:.15}
-        .uc-seg-on{fill:var(--signature);opacity:.9;filter:drop-shadow(0 0 4px rgba(231,184,95,.7))}
-        .uc-seg-blink{fill:var(--signature);opacity:.15;animation:ucBlink 1.6s steps(2) infinite}
-        @keyframes ucBlink{50%{opacity:.9}}
-        .uc-wheel{transform-origin:130px 190px;animation:ucSpin 5.5s linear infinite}
-        .uc-pulley{transform-origin:262px 226px;animation:ucSpin 2.2s linear infinite}
-        @keyframes ucSpin{to{transform:rotate(360deg)}}
-        .uc-pulse{fill:var(--signature);filter:drop-shadow(0 0 4px rgba(231,184,95,.85));
-          animation:ucPulse 1.8s linear infinite}
-        @keyframes ucPulse{0%{transform:translateX(0);opacity:1}85%{opacity:1}
-          100%{transform:translateX(68px);opacity:0}}
-        .uc-hum{animation:ucHum 3.4s ease-in-out infinite}
-        @keyframes ucHum{0%,100%{opacity:.35}50%{opacity:.7}}
-      0:{"P":null,"b":"GlHPBA4_FXaSHv1mumat2","p":"/natee-lab-site","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/natee-lab-site/_next/static/css/4cb0a62064d52786.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-Hant","children":["$","body",null,{"className":"antialiased","suppressHydrationWarning":true,"children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"className":"theme-lab min-h-dvh bg-bg text-text","children":[["$","style",null,{"children":"$4"}],["$","div",null,{"className":"fixed inset-x-0 top-0 z-10 flex items-center justify-between px-6 py-5 text-xs uppercase","children":[["$","span",null,{"className":"text-[13px] tracking-[0.24em] text-signature","children":"✦ Natee™"}],["$","$L5",null,{}]]}],["$","main",null,{"className":"mx-auto flex min-h-dvh max-w-3xl flex-col items-center justify-center gap-4 px-6 text-center","children":[["$","svg",null,{"className":"w-full max-w-[560px] overflow-visible","viewBox":"0 0 640 300","aria-hidden":"true","children":[["$","path",null,{"className":"uc-ln","d":"M 30 272 L 610 272","opacity":".4"}],["$","path",null,{"className":"uc-ln","d":"M 60 272 l -12 14 M 130 272 l -12 14 M 200 272 l -12 14 M 270 272 l -12 14 M 340 272 l -12 14 M 410 272 l -12 14 M 480 272 l -12 14 M 550 272 l -12 14","opacity":".2"}],["$","g",null,{"className":"uc-wheel","children":[["$","circle",null,{"className":"uc-ln","cx":"130","cy":"190","r":"72"}],["$","circle",null,{"className":"uc-ln","cx":"130","cy":"190","r":"58","opacity":".35"}],"$L6","$L7","$L8","$L9","$La"]}],"$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c"]}],"$L1d","$L1e","$L1f"]}]]}],null,"$L20"]}],{},null,false]},null,false],"$L21",false]],"m":"$undefined","G":["$22",[]],"s":false,"S":true}
-23:I[5104,[],"OutletBoundary"]
-25:I[7158,[],"AsyncMetadataOutlet"]
-27:I[5104,[],"ViewportBoundary"]
-29:I[5104,[],"MetadataBoundary"]
-2a:"$Sreact.suspense"
-6:["$","circle",null,{"className":"uc-body","cx":"130","cy":"190","r":"13"}]
-7:["$","line",null,{"className":"uc-ln","x1":"130","y1":"132","x2":"130","y2":"248"}]
-8:["$","line",null,{"className":"uc-ln","x1":"72","y1":"190","x2":"188","y2":"190"}]
-9:["$","line",null,{"className":"uc-ln","x1":"89","y1":"149","x2":"171","y2":"231"}]
-a:["$","line",null,{"className":"uc-ln","x1":"171","y1":"149","x2":"89","y2":"231"}]
-b:["$","path",null,{"className":"uc-ln","d":"M 104 268 L 130 196 L 156 268"}]
-c:["$","line",null,{"className":"uc-ln","x1":"136","y1":"119","x2":"266","y2":"206","opacity":".45"}]
-d:["$","line",null,{"className":"uc-ln","x1":"124","y1":"261","x2":"258","y2":"246","opacity":".45"}]
-e:["$","g",null,{"className":"uc-pulley","children":[["$","circle",null,{"className":"uc-ln","cx":"262","cy":"226","r":"20"}],["$","line",null,{"className":"uc-ln","x1":"262","y1":"206","x2":"262","y2":"246"}],["$","line",null,{"className":"uc-ln","x1":"242","y1":"226","x2":"282","y2":"226"}]]}]
-f:["$","path",null,{"className":"uc-ln","d":"M 250 268 L 262 248 L 274 268"}]
-10:["$","rect",null,{"className":"uc-body","x":"306","y":"176","width":"96","height":"76","rx":"10"}]
-11:["$","path",null,{"className":"uc-coil","d":"M 322 188 v 52 M 340 188 v 52 M 358 188 v 52 M 376 188 v 52"}]
-12:["$","line",null,{"className":"uc-ln","x1":"282","y1":"226","x2":"306","y2":"226"}]
-13:["$","path",null,{"className":"uc-ln","d":"M 402 214 L 470 214"}]
-14:["$","rect",null,{"className":"uc-body","x":"470","y":"152","width":"44","height":"116","rx":"8"}]
-15:["$","rect",null,{"className":"uc-ln","x":"484","y":"142","width":"16","height":"10","rx":"3"}]
-16:["$","rect",null,{"className":"uc-seg","x":"478","y":"156","width":"28","height":"14","rx":"3"}]
-17:["$","rect",null,{"className":"uc-seg","x":"478","y":"176","width":"28","height":"14","rx":"3"}]
-18:["$","rect",null,{"className":"uc-seg-blink","x":"478","y":"196","width":"28","height":"14","rx":"3"}]
-19:["$","rect",null,{"className":"uc-seg-on","x":"478","y":"216","width":"28","height":"14","rx":"3"}]
-1a:["$","rect",null,{"className":"uc-seg-on","x":"478","y":"236","width":"28","height":"14","rx":"3"}]
-1b:["$","path",null,{"className":"uc-ln uc-hum","d":"M 514 214 L 648 214","strokeDasharray":"3 7"}]
-1c:["$","circle",null,{"className":"uc-pulse","cx":"402","cy":"214","r":"3.2"}]
-1d:["$","h1",null,{"className":"font-display text-4xl font-semibold sm:text-6xl","children":["Under construction",["$","span",null,{"className":"text-signature","children":"."}]]}]
-1e:["$","p",null,{"className":"text-xs uppercase tracking-[0.22em] text-muted","children":"// generator running — powering up the lab"}]
-1f:["$","p",null,{"className":"text-sm text-muted","children":"用愛發電中——電量還不夠點亮整個實驗室，快了！"}]
-20:["$","$L23",null,{"children":["$L24",["$","$L25",null,{"promise":"$@26"}]]}]
-21:["$","$1","h",{"children":[null,[["$","$L27",null,{"children":"$L28"}],null],["$","$L29",null,{"children":["$","div",null,{"hidden":true,"children":["$","$2a",null,{"fallback":null,"children":"$L2b"}]}]}]]}]
-28:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-24:null
-26:{"metadata":[["$","title","0",{"children":"Natee Lab"}],["$","meta","1",{"name":"description","content":"Natee 的個人網站與實驗室。"}]],"error":null,"digest":"$undefined"}
-2b:"$26:metadata"
+4:I[5104,[],"OutletBoundary"]
+6:I[7158,[],"AsyncMetadataOutlet"]
+8:I[5104,[],"ViewportBoundary"]
+a:I[5104,[],"MetadataBoundary"]
+b:"$Sreact.suspense"
+d:I[4431,[],""]
+0:{"P":null,"b":"B3vXtvOQXWINeilmdOlqH","p":"/natee-lab-site","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"refresh","content":"0;url=/natee-lab-site/en/"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){try{\nvar M=[[\"zh-TW\",[\"zh-tw\",\"zh-hk\",\"zh-mo\",\"zh-hant\"]],[\"th\",[\"th\"]],[\"vi\",[\"vi\"]],[\"en\",[\"en\"]]],OK=[\"zh-TW\",\"en\",\"th\",\"vi\"];\nvar stored=localStorage.getItem(\"arun.lang\");\nvar lang=OK.indexOf(stored)>=0?stored:null;\nif(!lang){lang=\"en\";\nvar L=navigator.languages||[navigator.language||\"\"];\nouter:for(var i=0;i<L.length;i++){var t=(L[i]||\"\").toLowerCase();\nfor(var j=0;j<M.length;j++){var ps=M[j][1];\nfor(var k=0;k<ps.length;k++){if(t===ps[k]||t.indexOf(ps[k]+\"-\")===0){lang=M[j][0];break outer;}}}}}\nlocation.replace(\"/natee-lab-site\"+\"/\"+lang+\"/\");\n}catch(e){}})();"}}]]}],["$","body",null,{}]]}],null,["$","$L4",null,{"children":["$L5",["$","$L6",null,{"promise":"$@7"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$L8",null,{"children":"$L9"}],null],["$","$La",null,{"children":["$","div",null,{"hidden":true,"children":["$","$b",null,{"fallback":null,"children":"$Lc"}]}]}]]}],false]],"m":"$undefined","G":["$d",[]],"s":false,"S":true}
+9:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+5:null
+e:I[6505,[],"IconMark"]
+7:{"metadata":[["$","link","0",{"rel":"icon","href":"/natee-lab-site/icon.png?537391a254807cfa","type":"image/png","sizes":"512x512"}],["$","$Le","1",{}]],"error":null,"digest":"$undefined"}
+c:"$7:metadata"
